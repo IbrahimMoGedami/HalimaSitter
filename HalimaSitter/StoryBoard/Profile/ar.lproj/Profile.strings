@@ -1,0 +1,45 @@
+
+/* Class = "UIButton"; normalTitle = "Save"; ObjectID = "0QW-WW-x11"; */
+"0QW-WW-x11.normalTitle" = "حفظ";
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "1JB-lJ-a4G"; */
+"1JB-lJ-a4G.text" = "الاسم";
+
+/* Class = "UILabel"; text = "Phone"; ObjectID = "52Y-kN-szb"; */
+"52Y-kN-szb.text" = "رقم الهاتف";
+
+/* Class = "UILabel"; text = "Nursery Name"; ObjectID = "8wa-Ge-iq3"; */
+"8wa-Ge-iq3.text" = "اسم الحضانة";
+
+/* Class = "UILabel"; text = "Male"; ObjectID = "C8p-M1-g5k"; */
+"C8p-M1-g5k.text" = "ذكر";
+
+/* Class = "UILabel"; text = "Service Price (Sar / Hour)"; ObjectID = "Fjf-er-z71"; */
+"Fjf-er-z71.text" = "سعر الخدمة (ريال / ساعة)";
+
+/* Class = "UILabel"; text = "Type"; ObjectID = "Iaw-T2-NnQ"; */
+"Iaw-T2-NnQ.text" = "النوع";
+
+/* Class = "UILabel"; text = "Female"; ObjectID = "K1k-pK-u2V"; */
+"K1k-pK-u2V.text" = "أنثي";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "K5r-Ts-ldE"; */
+"K5r-Ts-ldE.text" = "Label";
+
+/* Class = "UILabel"; text = "Information: The maximum number of children to hold is four"; ObjectID = "Lia-CC-V2m"; */
+"Lia-CC-V2m.text" = "المعلومات: الحد الأقصى لعدد الأطفال الذين يمكن استيعابهم هو أربعة";
+
+/* Class = "UILabel"; text = "Brief About Me"; ObjectID = "Nqh-Sm-qoY"; */
+"Nqh-Sm-qoY.text" = "موجز عني";
+
+/* Class = "UILabel"; text = "Email"; ObjectID = "Vbo-fO-E3G"; */
+"Vbo-fO-E3G.text" = "البريد الالكتروني";
+
+/* Class = "UILabel"; text = "Nationality"; ObjectID = "bPw-Md-bfU"; */
+"bPw-Md-bfU.text" = "الجنسية";
+
+/* Class = "UILabel"; text = "View Babysitter"; ObjectID = "lmF-Sv-4Z5"; */
+"lmF-Sv-4Z5.text" = "مشاهدة المربيات";
+
+/* Class = "UILabel"; text = "View Rooms"; ObjectID = "zee-r5-jwb"; */
+"zee-r5-jwb.text" = "مشاهدة الغرف";

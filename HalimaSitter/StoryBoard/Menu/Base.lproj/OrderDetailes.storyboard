@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="va4-Ee-PfI">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="bold.ttf">
+            <string>DINNextLTArabic-Bold</string>
+        </array>
+        <array key="medium.ttf">
+            <string>DINNextLTArabic-Medium</string>
+        </array>
+        <array key="regular.ttf">
+            <string>DINNextLTArabic-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Orders Detailes View Controller-->
+        <scene sceneID="Hve-eH-U7P">
+            <objects>
+                <viewController storyboardIdentifier="OrdersDetailesViewController" id="va4-Ee-PfI" customClass="OrdersDetailesViewController" customModule="HalimaSitter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Pfu-rH-4aU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tvD-6b-SKm">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hlh-mf-Q2R">
+                                        <rect key="frame" x="40" y="49.5" width="25" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="25" id="gZw-2E-16H"/>
+                                            <constraint firstAttribute="height" constant="25" id="rU8-CC-8pX"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="BackEn"/>
+                                        <connections>
+                                            <action selector="backBtnPressed:" destination="va4-Ee-PfI" eventType="touchUpInside" id="Oie-HO-rqw"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Order Detailes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q57-ch-fq7">
+                                        <rect key="frame" x="143" y="50" width="128" height="23.5"/>
+                                        <fontDescription key="fontDescription" name="DINNextLTArabic-Bold" family="DIN Next LT Arabic" pointSize="20"/>
+                                        <color key="textColor" name="LblColor2"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <viewLayoutGuide key="safeArea" id="06I-8w-ZVb"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="02F-L9-6wF"/>
+                                    <constraint firstItem="hlh-mf-Q2R" firstAttribute="leading" secondItem="tvD-6b-SKm" secondAttribute="leading" constant="40" id="5XX-h4-Mso"/>
+                                    <constraint firstItem="hlh-mf-Q2R" firstAttribute="centerY" secondItem="q57-ch-fq7" secondAttribute="centerY" id="61R-1N-xcO"/>
+                                    <constraint firstItem="q57-ch-fq7" firstAttribute="top" secondItem="tvD-6b-SKm" secondAttribute="top" constant="50" id="e7L-Rj-Oih"/>
+                                    <constraint firstItem="q57-ch-fq7" firstAttribute="centerX" secondItem="tvD-6b-SKm" secondAttribute="centerX" id="qqX-Oy-pev"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Incubator:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QY0-XI-8NT">
+                                <rect key="frame" x="161.5" y="108" width="91" height="23.5"/>
+                                <fontDescription key="fontDescription" name="DINNextLTArabic-Medium" family="DIN Next LT Arabic" pointSize="20"/>
+                                <color key="textColor" name="LblColor1"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Order Date :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YFk-aH-b2l">
+                                <rect key="frame" x="40" y="139.5" width="81.5" height="17.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="81.5" id="sdb-6L-l9N"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DINNextLTArabic-Regular" family="DIN Next LT Arabic" pointSize="15"/>
+                                <color key="textColor" name="MainColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qms-XU-Wfk">
+                                <rect key="frame" x="40" y="165" width="64" height="17.5"/>
+                                <fontDescription key="fontDescription" name="DINNextLTArabic-Regular" family="DIN Next LT Arabic" pointSize="15"/>
+                                <color key="textColor" name="MainColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Order Stats :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5a9-uM-MJU">
+                                <rect key="frame" x="40" y="190.5" width="85.5" height="17.5"/>
+                                <fontDescription key="fontDescription" name="DINNextLTArabic-Regular" family="DIN Next LT Arabic" pointSize="15"/>
+                                <color key="textColor" name="MainColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kUm-V4-6lE">
+                                <rect key="frame" x="161.5" y="139.5" width="212.5" height="0.0"/>
+                                <fontDescription key="fontDescription" name="DINNextLTArabic-Regular" family="DIN Next LT Arabic" pointSize="15"/>
+                                <color key="textColor" name="LblColor2"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=":" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kaC-x4-d2w">
+                                <rect key="frame" x="161.5" y="147.5" width="212.5" height="17.5"/>
+                                <fontDescription key="fontDescription" name="DINNextLTArabic-Regular" family="DIN Next LT Arabic" pointSize="15"/>
+                                <color key="textColor" name="LblColor2"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TAg-w1-U1c">
+                                <rect key="frame" x="161.5" y="173" width="212.5" height="0.0"/>
+                                <fontDescription key="fontDescription" name="DINNextLTArabic-Regular" family="DIN Next LT Arabic" pointSize="15"/>
+                                <color key="textColor" name="LblColor2"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Monitor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aao-I0-mgi">
+                                <rect key="frame" x="40" y="235.5" width="55.5" height="19"/>
+                                <fontDescription key="fontDescription" name="DINNextLTArabic-Medium" family="DIN Next LT Arabic" pointSize="16"/>
+                                <color key="textColor" name="LblColor2"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dkg-cN-jdZ">
+                                <rect key="frame" x="161.5" y="225" width="212.5" height="40"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6DN-iE-4yV">
+                                        <rect key="frame" x="8" y="20" width="196.5" height="0.0"/>
+                                        <fontDescription key="fontDescription" name="DINNextLTArabic-Regular" family="DIN Next LT Arabic" pointSize="16"/>
+                                        <color key="textColor" name="LblColor2"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tfo-2q-iHu">
+                                        <rect key="frame" x="0.0" y="0.0" width="212.5" height="40"/>
+                                        <connections>
+                                            <action selector="selextAdminBtnPressed:" destination="va4-Ee-PfI" eventType="touchUpInside" id="R0c-fK-iQK"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="KDi-lA-aHu"/>
+                                    <constraint firstAttribute="bottom" secondItem="tfo-2q-iHu" secondAttribute="bottom" id="Kjj-0N-Stu"/>
+                                    <constraint firstItem="tfo-2q-iHu" firstAttribute="leading" secondItem="Dkg-cN-jdZ" secondAttribute="leading" id="LXM-qW-ui0"/>
+                                    <constraint firstItem="tfo-2q-iHu" firstAttribute="top" secondItem="Dkg-cN-jdZ" secondAttribute="top" id="MRz-Zs-jb1"/>
+                                    <constraint firstAttribute="trailing" secondItem="6DN-iE-4yV" secondAttribute="trailing" constant="8" id="OcR-PY-ONr"/>
+                                    <constraint firstAttribute="trailing" secondItem="tfo-2q-iHu" secondAttribute="trailing" id="g8u-ZZ-PBp"/>
+                                    <constraint firstItem="6DN-iE-4yV" firstAttribute="centerY" secondItem="Dkg-cN-jdZ" secondAttribute="centerY" id="pUq-lp-AxA"/>
+                                    <constraint firstItem="6DN-iE-4yV" firstAttribute="leading" secondItem="Dkg-cN-jdZ" secondAttribute="leading" constant="8" id="s2k-IU-VED"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" name="BorderColor1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4FQ-eu-RzD">
+                                <rect key="frame" x="40" y="216" width="334" height="1"/>
+                                <color key="backgroundColor" name="LblColor2"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="cHn-P6-dWw"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Children" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TVW-PZ-lYk">
+                                <rect key="frame" x="179" y="289" width="56" height="17.5"/>
+                                <fontDescription key="fontDescription" name="DINNextLTArabic-Regular" family="DIN Next LT Arabic" pointSize="15"/>
+                                <color key="textColor" name="MainColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" tag="1" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="TR4-x0-lRi">
+                                <rect key="frame" x="40" y="330.5" width="334" height="467.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="OrderChildernTableViewCell" rowHeight="111" id="zYD-WA-dro" customClass="OrderChildernTableViewCell" customModule="HalimaSitter" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="24.5" width="334" height="111"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zYD-WA-dro" id="chp-cq-74Z">
+                                            <rect key="frame" x="0.0" y="0.0" width="334" height="111"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wnQ-oj-Ytd">
+                                                    <rect key="frame" x="0.0" y="0.0" width="36" height="36"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sleeping-baby" translatesAutoresizingMaskIntoConstraints="NO" id="OVq-Bi-QPa">
+                                                            <rect key="frame" x="11.5" y="11.5" width="13" height="13"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="13" id="nfn-1H-APF"/>
+                                                                <constraint firstAttribute="width" constant="13" id="qtW-RC-lJ9"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="0.48627450980392156" green="0.48627450980392156" blue="0.49019607843137253" alpha="0.070000000000000007" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstItem="OVq-Bi-QPa" firstAttribute="centerY" secondItem="wnQ-oj-Ytd" secondAttribute="centerY" id="GTP-ux-xXD"/>
+                                                        <constraint firstAttribute="width" constant="36" id="KU2-oZ-v5J"/>
+                                                        <constraint firstAttribute="height" constant="36" id="h8K-Ic-7di"/>
+                                                        <constraint firstItem="OVq-Bi-QPa" firstAttribute="centerX" secondItem="wnQ-oj-Ytd" secondAttribute="centerX" id="xGB-ju-L3H"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="18"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="71B-oc-QqZ">
+                                                    <rect key="frame" x="52" y="5" width="266" height="97"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="e0k-Wl-1cV">
+                                                            <rect key="frame" x="0.0" y="0.0" width="102.5" height="44.5"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Name :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OnN-um-0J0">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="48.5" height="44.5"/>
+                                                                    <fontDescription key="fontDescription" name="DINNextLTArabic-Regular" family="DIN Next LT Arabic" pointSize="15"/>
+                                                                    <color key="textColor" name="LblColor1"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rXX-vs-QUJ">
+                                                                    <rect key="frame" x="52.5" y="0.0" width="50" height="44.5"/>
+                                                                    <fontDescription key="fontDescription" name="DINNextLTArabic-Regular" family="DIN Next LT Arabic" pointSize="15"/>
+                                                                    <color key="textColor" name="LblColor2"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="MrF-Bo-Eqt">
+                                                            <rect key="frame" x="0.0" y="44.5" width="123" height="17.5"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Diseases :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T9E-MI-e67">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="69" height="17.5"/>
+                                                                    <fontDescription key="fontDescription" name="DINNextLTArabic-Regular" family="DIN Next LT Arabic" pointSize="15"/>
+                                                                    <color key="textColor" name="LblColor1"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pk8-vj-BPn">
+                                                                    <rect key="frame" x="73" y="0.0" width="50" height="17.5"/>
+                                                                    <fontDescription key="fontDescription" name="DINNextLTArabic-Regular" family="DIN Next LT Arabic" pointSize="15"/>
+                                                                    <color key="textColor" name="LblColor2"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="rHe-93-esB">
+                                                            <rect key="frame" x="0.0" y="62" width="107.5" height="17.5"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Hobby :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b41-Vl-UBC">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="53.5" height="17.5"/>
+                                                                    <fontDescription key="fontDescription" name="DINNextLTArabic-Regular" family="DIN Next LT Arabic" pointSize="15"/>
+                                                                    <color key="textColor" name="LblColor1"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="db6-RI-Xsi">
+                                                                    <rect key="frame" x="57.5" y="0.0" width="50" height="17.5"/>
+                                                                    <fontDescription key="fontDescription" name="DINNextLTArabic-Regular" family="DIN Next LT Arabic" pointSize="15"/>
+                                                                    <color key="textColor" name="LblColor2"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="hmt-gT-bMZ">
+                                                            <rect key="frame" x="0.0" y="79.5" width="150" height="17.5"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Data Of Brith :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JLq-by-VHL">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="96" height="17.5"/>
+                                                                    <fontDescription key="fontDescription" name="DINNextLTArabic-Regular" family="DIN Next LT Arabic" pointSize="15"/>
+                                                                    <color key="textColor" name="LblColor1"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="czp-Ky-c8u">
+                                                                    <rect key="frame" x="100" y="0.0" width="50" height="17.5"/>
+                                                                    <fontDescription key="fontDescription" name="DINNextLTArabic-Regular" family="DIN Next LT Arabic" pointSize="15"/>
+                                                                    <color key="textColor" name="LblColor2"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="71B-oc-QqZ" firstAttribute="top" secondItem="wnQ-oj-Ytd" secondAttribute="top" constant="5" id="7xr-I1-vN7"/>
+                                                <constraint firstAttribute="trailing" secondItem="71B-oc-QqZ" secondAttribute="trailing" constant="16" id="PST-Jc-Muw"/>
+                                                <constraint firstItem="71B-oc-QqZ" firstAttribute="leading" secondItem="wnQ-oj-Ytd" secondAttribute="trailing" constant="16" id="Ui3-gR-en6"/>
+                                                <constraint firstItem="wnQ-oj-Ytd" firstAttribute="top" secondItem="chp-cq-74Z" secondAttribute="top" id="ZRq-k0-odR"/>
+                                                <constraint firstItem="wnQ-oj-Ytd" firstAttribute="leading" secondItem="chp-cq-74Z" secondAttribute="leading" id="n78-Lk-eml"/>
+                                                <constraint firstAttribute="bottom" secondItem="71B-oc-QqZ" secondAttribute="bottom" constant="9" id="rLV-vL-jvT"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="childNameLbl" destination="rXX-vs-QUJ" id="z2l-Kx-eEd"/>
+                                            <outlet property="dataOfBrithLbl" destination="czp-Ky-c8u" id="Dib-O6-nw3"/>
+                                            <outlet property="doesLbl" destination="pk8-vj-BPn" id="bq0-g5-llT"/>
+                                            <outlet property="hobbyLbl" destination="db6-RI-Xsi" id="ZM5-Eu-pEJ"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="hTo-DP-nxX">
+                                <rect key="frame" x="109" y="806" width="196" height="32"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aTl-qn-dgn">
+                                        <rect key="frame" x="0.0" y="0.0" width="90" height="32"/>
+                                        <color key="backgroundColor" name="MainColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="32" id="Nke-oh-jPr"/>
+                                            <constraint firstAttribute="width" constant="90" id="wUd-WE-dVd"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="DINNextLTArabic-Regular" family="DIN Next LT Arabic" pointSize="15"/>
+                                        <state key="normal" title="Tracking">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="4"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="trackBtnPressed:" destination="va4-Ee-PfI" eventType="touchUpInside" id="O24-b6-Ftv"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cHD-ct-rfs">
+                                        <rect key="frame" x="106" y="0.0" width="90" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="90" id="k1P-MZ-v0j"/>
+                                            <constraint firstAttribute="height" constant="32" id="nS3-fg-Nz2"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="DINNextLTArabic-Regular" family="DIN Next LT Arabic" pointSize="15"/>
+                                        <state key="normal" title="Cancel">
+                                            <color key="titleColor" name="LblColor2"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" name="LblColor2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="4"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="cancelBtnPressed:" destination="va4-Ee-PfI" eventType="touchUpInside" id="VCA-y1-6j0"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9y6-fM-Kow"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="kUm-V4-6lE" firstAttribute="leading" secondItem="YFk-aH-b2l" secondAttribute="trailing" constant="40" id="1PV-jX-cLq"/>
+                            <constraint firstItem="TAg-w1-U1c" firstAttribute="top" secondItem="kaC-x4-d2w" secondAttribute="bottom" constant="8" id="1yA-S8-Jzp"/>
+                            <constraint firstItem="tvD-6b-SKm" firstAttribute="leading" secondItem="Pfu-rH-4aU" secondAttribute="leading" id="4qw-l7-e19"/>
+                            <constraint firstItem="YFk-aH-b2l" firstAttribute="top" secondItem="QY0-XI-8NT" secondAttribute="bottom" constant="8" id="5h9-U2-rH3"/>
+                            <constraint firstItem="5a9-uM-MJU" firstAttribute="top" secondItem="qms-XU-Wfk" secondAttribute="bottom" constant="8" id="6md-f8-BwC"/>
+                            <constraint firstItem="9y6-fM-Kow" firstAttribute="trailing" secondItem="Dkg-cN-jdZ" secondAttribute="trailing" constant="40" id="7tS-6w-B05"/>
+                            <constraint firstItem="QY0-XI-8NT" firstAttribute="centerX" secondItem="Pfu-rH-4aU" secondAttribute="centerX" id="8h9-oK-STG"/>
+                            <constraint firstItem="9y6-fM-Kow" firstAttribute="trailing" secondItem="kUm-V4-6lE" secondAttribute="trailing" constant="40" id="Ao9-Cb-e9t"/>
+                            <constraint firstItem="hTo-DP-nxX" firstAttribute="top" secondItem="TR4-x0-lRi" secondAttribute="bottom" constant="8" id="EXh-XY-3B6"/>
+                            <constraint firstItem="9y6-fM-Kow" firstAttribute="trailing" secondItem="4FQ-eu-RzD" secondAttribute="trailing" constant="40" id="JwP-PQ-Wic"/>
+                            <constraint firstItem="QY0-XI-8NT" firstAttribute="top" secondItem="tvD-6b-SKm" secondAttribute="bottom" constant="8" id="LhV-sI-8PP"/>
+                            <constraint firstItem="YFk-aH-b2l" firstAttribute="leading" secondItem="9y6-fM-Kow" secondAttribute="leading" constant="40" id="Nve-4D-0xH"/>
+                            <constraint firstItem="TAg-w1-U1c" firstAttribute="leading" secondItem="kUm-V4-6lE" secondAttribute="leading" id="OIL-md-OuN"/>
+                            <constraint firstItem="4FQ-eu-RzD" firstAttribute="top" secondItem="5a9-uM-MJU" secondAttribute="bottom" constant="8" id="PCe-Cj-RfS"/>
+                            <constraint firstItem="Dkg-cN-jdZ" firstAttribute="top" secondItem="4FQ-eu-RzD" secondAttribute="bottom" constant="8" id="Q1I-Lx-Hmy"/>
+                            <constraint firstItem="kUm-V4-6lE" firstAttribute="top" secondItem="YFk-aH-b2l" secondAttribute="top" id="RT6-BL-4yR"/>
+                            <constraint firstItem="kaC-x4-d2w" firstAttribute="trailing" secondItem="kUm-V4-6lE" secondAttribute="trailing" id="RsL-OQ-u2C"/>
+                            <constraint firstItem="9y6-fM-Kow" firstAttribute="trailing" secondItem="tvD-6b-SKm" secondAttribute="trailing" id="SFp-bv-P9U"/>
+                            <constraint firstItem="TR4-x0-lRi" firstAttribute="leading" secondItem="9y6-fM-Kow" secondAttribute="leading" constant="40" id="W2s-Ac-QEB"/>
+                            <constraint firstItem="aao-I0-mgi" firstAttribute="leading" secondItem="YFk-aH-b2l" secondAttribute="leading" id="Xbs-X1-ANz"/>
+                            <constraint firstItem="TAg-w1-U1c" firstAttribute="trailing" secondItem="kUm-V4-6lE" secondAttribute="trailing" id="aij-KC-IwO"/>
+                            <constraint firstItem="4FQ-eu-RzD" firstAttribute="leading" secondItem="9y6-fM-Kow" secondAttribute="leading" constant="40" id="bGI-bG-iNK"/>
+                            <constraint firstItem="aao-I0-mgi" firstAttribute="centerY" secondItem="Dkg-cN-jdZ" secondAttribute="centerY" id="bTo-K5-kHV"/>
+                            <constraint firstItem="TVW-PZ-lYk" firstAttribute="top" secondItem="Dkg-cN-jdZ" secondAttribute="bottom" constant="24" id="cK1-cK-F7V"/>
+                            <constraint firstItem="9y6-fM-Kow" firstAttribute="bottom" secondItem="hTo-DP-nxX" secondAttribute="bottom" constant="24" id="dJ9-lB-HMQ"/>
+                            <constraint firstItem="kaC-x4-d2w" firstAttribute="top" secondItem="kUm-V4-6lE" secondAttribute="bottom" constant="8" id="g0l-EQ-T96"/>
+                            <constraint firstItem="9y6-fM-Kow" firstAttribute="trailing" secondItem="TR4-x0-lRi" secondAttribute="trailing" constant="40" id="hqX-vO-oad"/>
+                            <constraint firstItem="hTo-DP-nxX" firstAttribute="centerX" secondItem="Pfu-rH-4aU" secondAttribute="centerX" id="iz0-Yu-Hbb"/>
+                            <constraint firstItem="Dkg-cN-jdZ" firstAttribute="leading" secondItem="kUm-V4-6lE" secondAttribute="leading" id="jDF-34-h4j"/>
+                            <constraint firstItem="qms-XU-Wfk" firstAttribute="top" secondItem="YFk-aH-b2l" secondAttribute="bottom" constant="8" id="mIy-GY-egh"/>
+                            <constraint firstItem="TR4-x0-lRi" firstAttribute="top" secondItem="TVW-PZ-lYk" secondAttribute="bottom" constant="24" id="ne9-9G-uy5"/>
+                            <constraint firstItem="tvD-6b-SKm" firstAttribute="top" secondItem="Pfu-rH-4aU" secondAttribute="top" id="nvW-ro-IEC"/>
+                            <constraint firstItem="5a9-uM-MJU" firstAttribute="leading" secondItem="YFk-aH-b2l" secondAttribute="leading" id="pJ3-Md-CtE"/>
+                            <constraint firstItem="qms-XU-Wfk" firstAttribute="leading" secondItem="YFk-aH-b2l" secondAttribute="leading" id="raS-uV-Lel"/>
+                            <constraint firstItem="TVW-PZ-lYk" firstAttribute="centerX" secondItem="Pfu-rH-4aU" secondAttribute="centerX" id="tZX-1E-Gd6"/>
+                            <constraint firstItem="kaC-x4-d2w" firstAttribute="leading" secondItem="kUm-V4-6lE" secondAttribute="leading" id="waR-5K-zIx"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addressLbl" destination="kaC-x4-d2w" id="BM7-iG-LBb"/>
+                        <outlet property="cancelBtn" destination="cHD-ct-rfs" id="xBP-rr-RCe"/>
+                        <outlet property="dateLbl" destination="kUm-V4-6lE" id="aIW-I2-hhb"/>
+                        <outlet property="mountorNameLbl" destination="6DN-iE-4yV" id="0tU-Fl-dwG"/>
+                        <outlet property="nameLbl" destination="QY0-XI-8NT" id="dI6-d3-hRj"/>
+                        <outlet property="orderDetailesTableDelagte" destination="TR4-x0-lRi" id="vww-0K-3Y9"/>
+                        <outlet property="ordesStatsLbl" destination="TAg-w1-U1c" id="Jsa-Sf-c1c"/>
+                        <outlet property="selectAdminBtn" destination="tfo-2q-iHu" id="BPD-SK-Dec"/>
+                        <outlet property="trackingBtn" destination="aTl-qn-dgn" id="b5i-yA-mzg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sdn-yG-kJi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-14.492753623188406" y="55.580357142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BackEn" width="24" height="17"/>
+        <image name="sleeping-baby" width="17.5" height="14.5"/>
+        <namedColor name="BorderColor1">
+            <color red="0.43900001049041748" green="0.43900001049041748" blue="0.43900001049041748" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="LblColor1">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="LblColor2">
+            <color red="0.48600000143051147" green="0.48600000143051147" blue="0.49000000953674316" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="MainColor">
+            <color red="0.96100002527236938" green="0.68999999761581421" blue="0.70999997854232788" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

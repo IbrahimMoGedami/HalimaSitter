@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Video Call View Controller-->
+        <scene sceneID="eIa-0x-yXb">
+            <objects>
+                <viewController storyboardIdentifier="VideoCallViewController" id="bJm-AP-d6E" customClass="VideoCallViewController" customModule="Halima" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NEL-nf-kVh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bD5-JZ-ba4" userLabel="remoteVideo">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" red="0.2826409936" green="0.25691255930000001" blue="0.34382003550000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="big_logo" translatesAutoresizingMaskIntoConstraints="NO" id="MWy-Kq-HsG" userLabel="remoteVideoMutedIndicator">
+                                <rect key="frame" x="157" y="398" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="0q2-Av-fgS"/>
+                                    <constraint firstAttribute="width" secondItem="MWy-Kq-HsG" secondAttribute="height" multiplier="1:1" id="CS9-T2-tqg"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qIh-oG-MI2" userLabel="localVideo">
+                                <rect key="frame" x="304" y="80" width="85" height="113.5"/>
+                                <color key="backgroundColor" red="0.51017522810000004" green="0.48047775030000001" blue="0.57149040699999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="85" id="Iz3-8b-y0R"/>
+                                    <constraint firstAttribute="width" secondItem="qIh-oG-MI2" secondAttribute="height" multiplier="3:4" id="pj9-X8-yCV"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WAJ-IE-gCY">
+                                <rect key="frame" x="304" y="80" width="85" height="113.5"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-white" translatesAutoresizingMaskIntoConstraints="NO" id="XT3-aI-eou" userLabel="localVideoMutedIndicator">
+                                        <rect key="frame" x="24.5" y="38.5" width="36" height="36"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="36" id="IA6-w0-0aM"/>
+                                            <constraint firstAttribute="height" constant="36" id="sj3-UD-sC5"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.51017522810000004" green="0.48047775030000001" blue="0.57149040699999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="XT3-aI-eou" firstAttribute="centerX" secondItem="WAJ-IE-gCY" secondAttribute="centerX" id="dAf-ca-9fs"/>
+                                    <constraint firstItem="XT3-aI-eou" firstAttribute="centerY" secondItem="WAJ-IE-gCY" secondAttribute="centerY" id="skv-dw-25o"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4g0-wW-WdC" userLabel="muteButton">
+                                <rect key="frame" x="89" y="754.5" width="55" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="4g0-wW-WdC" secondAttribute="height" multiplier="1:1" id="nYl-QG-d0E"/>
+                                    <constraint firstAttribute="width" constant="55" id="rvi-kX-mlm"/>
+                                </constraints>
+                                <state key="normal" image="mic"/>
+                                <state key="selected" image="mute"/>
+                                <state key="highlighted" image="mic_pressed"/>
+                                <connections>
+                                    <action selector="didClickMuteButton:" destination="bJm-AP-d6E" eventType="touchUpInside" id="H5c-vI-hCx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ncZ-HA-PEs" userLabel="hangUpButton">
+                                <rect key="frame" x="172" y="747" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="5FM-ln-34B"/>
+                                    <constraint firstAttribute="width" secondItem="ncZ-HA-PEs" secondAttribute="height" id="fUG-hP-rsv"/>
+                                </constraints>
+                                <state key="normal" title="Hang Up" image="end"/>
+                                <state key="selected" image="call"/>
+                                <connections>
+                                    <action selector="didClickHangUpButton:" destination="bJm-AP-d6E" eventType="touchUpInside" id="xwe-fb-Vou"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9nV-T4-Yl6" userLabel="switchCameraButton">
+                                <rect key="frame" x="270" y="754.5" width="55" height="55"/>
+                                <state key="normal" image="switch"/>
+                                <state key="selected" image="switch"/>
+                                <state key="highlighted" image="switch_pressed"/>
+                                <connections>
+                                    <action selector="didClickSwitchCameraButton:" destination="bJm-AP-d6E" eventType="touchUpInside" id="ecO-XY-yfE"/>
+                                </connections>
+                            </button>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OmC-Qw-DnJ">
+                                <rect key="frame" x="16" y="645" width="195" height="86"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="86" id="pvw-OT-azP"/>
+                                    <constraint firstAttribute="width" constant="195" id="smp-w3-rMe"/>
+                                </constraints>
+                            </containerView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="1mC-rG-49x"/>
+                        <color key="backgroundColor" red="0.2826409936" green="0.25691255930000001" blue="0.34382003550000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ncZ-HA-PEs" firstAttribute="top" secondItem="OmC-Qw-DnJ" secondAttribute="bottom" constant="16" id="0KB-fL-7Qp"/>
+                            <constraint firstItem="bD5-JZ-ba4" firstAttribute="leading" secondItem="1mC-rG-49x" secondAttribute="leading" id="2yy-p6-ZXg"/>
+                            <constraint firstItem="OmC-Qw-DnJ" firstAttribute="leading" secondItem="1mC-rG-49x" secondAttribute="leading" constant="16" id="7kT-5w-hP7"/>
+                            <constraint firstItem="WAJ-IE-gCY" firstAttribute="leading" secondItem="qIh-oG-MI2" secondAttribute="leading" id="8oW-gM-mNG"/>
+                            <constraint firstItem="ncZ-HA-PEs" firstAttribute="centerX" secondItem="NEL-nf-kVh" secondAttribute="centerX" id="9VB-79-SEn"/>
+                            <constraint firstItem="9nV-T4-Yl6" firstAttribute="width" secondItem="4g0-wW-WdC" secondAttribute="width" id="FbU-mX-ITI"/>
+                            <constraint firstItem="bD5-JZ-ba4" firstAttribute="top" secondItem="NEL-nf-kVh" secondAttribute="top" id="Fhw-dP-gMP"/>
+                            <constraint firstItem="1mC-rG-49x" firstAttribute="trailing" secondItem="qIh-oG-MI2" secondAttribute="trailing" constant="25" id="IIY-ds-JFK"/>
+                            <constraint firstItem="bD5-JZ-ba4" firstAttribute="trailing" secondItem="1mC-rG-49x" secondAttribute="trailing" id="Ke0-LO-cnC"/>
+                            <constraint firstItem="WAJ-IE-gCY" firstAttribute="width" secondItem="qIh-oG-MI2" secondAttribute="width" id="MX0-ae-0AP"/>
+                            <constraint firstItem="WAJ-IE-gCY" firstAttribute="height" secondItem="qIh-oG-MI2" secondAttribute="height" id="QTC-31-Ugi"/>
+                            <constraint firstItem="qIh-oG-MI2" firstAttribute="top" secondItem="1mC-rG-49x" secondAttribute="top" constant="36" id="Qf8-Ol-0IS"/>
+                            <constraint firstAttribute="bottom" secondItem="bD5-JZ-ba4" secondAttribute="bottom" id="Vpc-Jq-kAC"/>
+                            <constraint firstItem="MWy-Kq-HsG" firstAttribute="centerX" secondItem="NEL-nf-kVh" secondAttribute="centerX" id="Vte-9A-vJY"/>
+                            <constraint firstItem="MWy-Kq-HsG" firstAttribute="centerY" secondItem="NEL-nf-kVh" secondAttribute="centerY" id="XpI-0q-yvz"/>
+                            <constraint firstItem="WAJ-IE-gCY" firstAttribute="top" secondItem="qIh-oG-MI2" secondAttribute="top" id="brO-F4-wuU"/>
+                            <constraint firstItem="9nV-T4-Yl6" firstAttribute="leading" secondItem="ncZ-HA-PEs" secondAttribute="trailing" constant="28" id="hQe-ty-1d9"/>
+                            <constraint firstItem="ncZ-HA-PEs" firstAttribute="leading" secondItem="4g0-wW-WdC" secondAttribute="trailing" constant="28" id="kUc-Kv-59C"/>
+                            <constraint firstItem="9nV-T4-Yl6" firstAttribute="height" secondItem="4g0-wW-WdC" secondAttribute="height" id="pfe-ef-9O4"/>
+                            <constraint firstItem="9nV-T4-Yl6" firstAttribute="centerY" secondItem="ncZ-HA-PEs" secondAttribute="centerY" id="tM3-Kv-oie"/>
+                            <constraint firstItem="4g0-wW-WdC" firstAttribute="centerY" secondItem="ncZ-HA-PEs" secondAttribute="centerY" id="xfw-ec-hjJ"/>
+                            <constraint firstItem="1mC-rG-49x" firstAttribute="bottom" secondItem="ncZ-HA-PEs" secondAttribute="bottom" constant="45" id="z0A-da-3aS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cameraButton" destination="9nV-T4-Yl6" id="HdV-lo-y4y"/>
+                        <outlet property="localVideoMutedIndicator" destination="WAJ-IE-gCY" id="v1h-9R-WEL"/>
+                        <outlet property="localeView" destination="qIh-oG-MI2" id="hV5-ga-7fj"/>
+                        <outlet property="micButton" destination="4g0-wW-WdC" id="qqV-5I-NaJ"/>
+                        <outlet property="remoteVideoMutedIndicator" destination="MWy-Kq-HsG" id="dCk-4u-Tpb"/>
+                        <outlet property="remoteView" destination="bD5-JZ-ba4" id="SN5-WR-NLc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jVU-aV-lY9" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="426" y="-222"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="big_logo" width="100" height="106"/>
+        <image name="call" width="64" height="64"/>
+        <image name="end" width="72" height="72"/>
+        <image name="logo-white" width="39" height="42"/>
+        <image name="mic" width="220" height="220"/>
+        <image name="mic_pressed" width="220" height="220"/>
+        <image name="mute" width="204" height="204"/>
+        <image name="switch" width="220" height="220"/>
+        <image name="switch_pressed" width="220" height="220"/>
+    </resources>
+</document>

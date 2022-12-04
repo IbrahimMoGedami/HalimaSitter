@@ -1,0 +1,15 @@
+
+/* Class = "UILabel"; text = "Register"; ObjectID = "KMc-16-vYq"; */
+"KMc-16-vYq.text" = "تسجيل حساب";
+
+/* Class = "UILabel"; text = "Don't have an account?"; ObjectID = "McX-vh-wVF"; */
+"McX-vh-wVF.text" = "لديك حساب";
+
+/* Class = "UIButton"; normalTitle = "Login"; ObjectID = "a3D-tw-kRj"; */
+"a3D-tw-kRj.normalTitle" = "تسيل الدخول";
+
+/* Class = "UILabel"; text = "Register as a babysitter"; ObjectID = "ihS-Dh-eff"; */
+"ihS-Dh-eff.text" = "سجل كمربية";
+
+/* Class = "UILabel"; text = "Register as a Nursery"; ObjectID = "vpA-Mo-8se"; */
+"vpA-Mo-8se.text" = "سجل كحضانة";

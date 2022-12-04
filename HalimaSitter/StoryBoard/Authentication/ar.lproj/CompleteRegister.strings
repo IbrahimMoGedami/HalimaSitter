@@ -1,0 +1,15 @@
+
+/* Class = "UILabel"; text = "Add Certificates"; ObjectID = "M7F-JK-gNc"; */
+"M7F-JK-gNc.text" = "اضف شهادات";
+
+/* Class = "UILabel"; text = "Continue filling in the Information to Register"; ObjectID = "X9f-4Y-0Gy"; */
+"X9f-4Y-0Gy.text" = "استمر في ملء المعلومات للتسجيل";
+
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "aRT-9A-qTw"; */
+"aRT-9A-qTw.normalTitle" = "التالي";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "nf2-zp-JTL"; */
+"nf2-zp-JTL.text" = "Label";
+
+/* Class = "UILabel"; text = "Register"; ObjectID = "vWZ-06-S4B"; */
+"vWZ-06-S4B.text" = "تسجيل حساب";

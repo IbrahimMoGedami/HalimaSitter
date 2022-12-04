@@ -1,0 +1,27 @@
+
+/* Class = "UIButton"; normalTitle = "End"; ObjectID = "EU5-Dh-cgl"; */
+"EU5-Dh-cgl.normalTitle" = "انهاء";
+
+/* Class = "UIButton"; normalTitle = "Starting"; ObjectID = "NO4-bS-x3B"; */
+"NO4-bS-x3B.normalTitle" = "بداء الجلسة";
+
+/* Class = "UILabel"; text = "About Children"; ObjectID = "RsR-z3-LaT"; */
+"RsR-z3-LaT.text" = "عن الطفل";
+
+/* Class = "UIButton"; normalTitle = "Reject"; ObjectID = "YwI-tl-GHS"; */
+"YwI-tl-GHS.normalTitle" = "رفض";
+
+/* Class = "UILabel"; text = "Data Of Brith :"; ObjectID = "aQj-sX-7cU"; */
+"aQj-sX-7cU.text" = "تاريخ الملياد :";
+
+/* Class = "UILabel"; text = "Diseases :"; ObjectID = "bD7-Ue-Z6x"; */
+"bD7-Ue-Z6x.text" = "الاممراض :";
+
+/* Class = "UILabel"; text = "Name :"; ObjectID = "h0w-E4-2RN"; */
+"h0w-E4-2RN.text" = "الاسم :";
+
+/* Class = "UILabel"; text = "Hobby :"; ObjectID = "oeK-pS-Dxa"; */
+"oeK-pS-Dxa.text" = "الهواية ";
+
+/* Class = "UIButton"; normalTitle = "Accept"; ObjectID = "pHt-Tp-gvs"; */
+"pHt-Tp-gvs.normalTitle" = "قبول";

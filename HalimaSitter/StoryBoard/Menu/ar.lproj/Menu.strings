@@ -1,0 +1,18 @@
+
+/* Class = "UILabel"; text = "About Halima"; ObjectID = "31s-8y-S7M"; */
+"31s-8y-S7M.text" = "عن حليمة";
+
+/* Class = "UILabel"; text = "Settings"; ObjectID = "9tk-zW-tUU"; */
+"9tk-zW-tUU.text" = "الاعدادات";
+
+/* Class = "UILabel"; text = "اللغة العربية"; ObjectID = "Gbx-XB-HAg"; */
+"Gbx-XB-HAg.text" = "English";
+
+/* Class = "UILabel"; text = "Privacy Policy"; ObjectID = "MoK-eD-KQe"; */
+"MoK-eD-KQe.text" = "سياسة الخصوية";
+
+/* Class = "UILabel"; text = "Logout"; ObjectID = "OHR-cR-SXg"; */
+"OHR-cR-SXg.text" = "تسجيل الخروج";
+
+/* Class = "UILabel"; text = "Wallet"; ObjectID = "wBX-cp-3gI"; */
+"wBX-cp-3gI.text" = "المحفظة";

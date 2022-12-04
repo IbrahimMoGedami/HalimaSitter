@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="medium.ttf">
+            <string>DINNextLTArabic-Medium</string>
+        </array>
+        <array key="regular.ttf">
+            <string>DINNextLTArabic-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Validation Code View Controller-->
+        <scene sceneID="jg6-72-rsX">
+            <objects>
+                <viewController storyboardIdentifier="ValidationCodeViewController" id="btC-dY-jEb" customClass="ValidationCodeViewController" customModule="HalimaSitter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UDe-B7-vfX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rkP-kj-3Eq">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qs6-US-WPN">
+                                <rect key="frame" x="0.0" y="496" width="414" height="400"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter the code" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PE0-uJ-cs6">
+                                        <rect key="frame" x="32" y="24" width="131.5" height="23.5"/>
+                                        <fontDescription key="fontDescription" name="DINNextLTArabic-Medium" family="DIN Next LT Arabic" pointSize="20"/>
+                                        <color key="textColor" name="LblColor1"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter the four-digit code to be able to change the password" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vnm-dP-Ine">
+                                        <rect key="frame" x="32" y="55.5" width="350" height="35"/>
+                                        <fontDescription key="fontDescription" name="DINNextLTArabic-Regular" family="DIN Next LT Arabic" pointSize="15"/>
+                                        <color key="textColor" name="LblColor2"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Ecp-wW-VU1">
+                                        <rect key="frame" x="32" y="118.5" width="350" height="48"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iiG-QZ-znT">
+                                                <rect key="frame" x="0.0" y="0.0" width="75.5" height="48"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="48" id="Add-Ex-QLQ"/>
+                                                </constraints>
+                                                <color key="textColor" name="LblColor2"/>
+                                                <fontDescription key="fontDescription" name="DINNextLTArabic-Medium" family="DIN Next LT Arabic" pointSize="15"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="13"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" name="LblColor2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WTI-rF-aDO">
+                                                <rect key="frame" x="91.5" y="0.0" width="75.5" height="48"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="48" id="yJ1-r9-SM8"/>
+                                                </constraints>
+                                                <color key="textColor" name="LblColor2"/>
+                                                <fontDescription key="fontDescription" name="DINNextLTArabic-Medium" family="DIN Next LT Arabic" pointSize="15"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="13"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" name="LblColor2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RV2-Ep-FyR">
+                                                <rect key="frame" x="183" y="0.0" width="75.5" height="48"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="48" id="xqF-5a-3Jd"/>
+                                                </constraints>
+                                                <color key="textColor" name="LblColor2"/>
+                                                <fontDescription key="fontDescription" name="DINNextLTArabic-Medium" family="DIN Next LT Arabic" pointSize="15"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="13"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" name="LblColor2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4J0-m4-CGa">
+                                                <rect key="frame" x="274.5" y="0.0" width="75.5" height="48"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="48" id="c66-gZ-gZp"/>
+                                                </constraints>
+                                                <color key="textColor" name="LblColor2"/>
+                                                <fontDescription key="fontDescription" name="DINNextLTArabic-Medium" family="DIN Next LT Arabic" pointSize="15"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="13"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" name="LblColor2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CsP-nL-6qL">
+                                        <rect key="frame" x="161" y="190.5" width="92" height="30"/>
+                                        <fontDescription key="fontDescription" name="DINNextLTArabic-Regular" family="DIN Next LT Arabic" pointSize="15"/>
+                                        <state key="normal" title="Resend Code">
+                                            <color key="titleColor" name="LblColor2"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="resendCodeBtnPressed:" destination="btC-dY-jEb" eventType="touchUpInside" id="xrV-l1-xBd"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VOD-A1-rct">
+                                        <rect key="frame" x="32" y="236.5" width="350" height="50"/>
+                                        <color key="backgroundColor" name="MainColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="CUK-TP-qRS"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="DINNextLTArabic-Medium" family="DIN Next LT Arabic" pointSize="15"/>
+                                        <state key="normal" title="Send">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="sendCodeBtnPressed:" destination="btC-dY-jEb" eventType="touchUpInside" id="GSS-8F-7e3"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Bo-L2-DXh">
+                                        <rect key="frame" x="207" y="190.5" width="0.0" height="0.0"/>
+                                        <fontDescription key="fontDescription" name="DINNextLTArabic-Medium" family="DIN Next LT Arabic" pointSize="15"/>
+                                        <color key="textColor" name="MainColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="CsP-nL-6qL" firstAttribute="centerX" secondItem="Qs6-US-WPN" secondAttribute="centerX" id="11l-MV-PmJ"/>
+                                    <constraint firstItem="CsP-nL-6qL" firstAttribute="top" secondItem="Ecp-wW-VU1" secondAttribute="bottom" constant="24" id="7gI-nM-MeX"/>
+                                    <constraint firstItem="5Bo-L2-DXh" firstAttribute="top" secondItem="Ecp-wW-VU1" secondAttribute="bottom" constant="24" id="91g-4d-YUO"/>
+                                    <constraint firstItem="Ecp-wW-VU1" firstAttribute="centerX" secondItem="Qs6-US-WPN" secondAttribute="centerX" id="FAb-aS-I4x"/>
+                                    <constraint firstAttribute="trailing" secondItem="vnm-dP-Ine" secondAttribute="trailing" constant="32" id="GPn-q0-TMw"/>
+                                    <constraint firstItem="Ecp-wW-VU1" firstAttribute="top" secondItem="vnm-dP-Ine" secondAttribute="bottom" constant="28" id="KSn-2W-sAx"/>
+                                    <constraint firstItem="PE0-uJ-cs6" firstAttribute="leading" secondItem="Qs6-US-WPN" secondAttribute="leading" constant="32" id="N7u-DE-HVu"/>
+                                    <constraint firstItem="Ecp-wW-VU1" firstAttribute="leading" secondItem="Qs6-US-WPN" secondAttribute="leading" constant="32" id="P8b-1D-kos"/>
+                                    <constraint firstAttribute="height" constant="400" id="VMu-gB-CRQ"/>
+                                    <constraint firstItem="VOD-A1-rct" firstAttribute="leading" secondItem="Qs6-US-WPN" secondAttribute="leading" constant="32" id="WJq-l7-7rF"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ecp-wW-VU1" secondAttribute="trailing" constant="32" id="b3a-e6-6DM"/>
+                                    <constraint firstItem="VOD-A1-rct" firstAttribute="top" secondItem="CsP-nL-6qL" secondAttribute="bottom" constant="16" id="cvx-4E-2y4"/>
+                                    <constraint firstItem="5Bo-L2-DXh" firstAttribute="centerX" secondItem="Qs6-US-WPN" secondAttribute="centerX" id="gHJ-Qg-tki"/>
+                                    <constraint firstAttribute="trailing" secondItem="VOD-A1-rct" secondAttribute="trailing" constant="32" id="n79-Ge-iNL"/>
+                                    <constraint firstItem="vnm-dP-Ine" firstAttribute="top" secondItem="PE0-uJ-cs6" secondAttribute="bottom" constant="8" id="nOD-KD-kpF"/>
+                                    <constraint firstItem="PE0-uJ-cs6" firstAttribute="top" secondItem="Qs6-US-WPN" secondAttribute="top" constant="24" id="rxF-cP-yFS"/>
+                                    <constraint firstItem="vnm-dP-Ine" firstAttribute="leading" secondItem="Qs6-US-WPN" secondAttribute="leading" constant="32" id="xIT-J7-Yzv"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ZCx-x8-8FH"/>
+                        <color key="backgroundColor" red="0.48627450979999998" green="0.48627450979999998" blue="0.49019607840000001" alpha="0.30356378420000002" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="rkP-kj-3Eq" firstAttribute="top" secondItem="UDe-B7-vfX" secondAttribute="top" id="5WX-Rn-jIE"/>
+                            <constraint firstItem="rkP-kj-3Eq" firstAttribute="leading" secondItem="ZCx-x8-8FH" secondAttribute="leading" id="Grv-ic-180"/>
+                            <constraint firstItem="Qs6-US-WPN" firstAttribute="leading" secondItem="ZCx-x8-8FH" secondAttribute="leading" id="SGf-UL-e7z"/>
+                            <constraint firstItem="Qs6-US-WPN" firstAttribute="trailing" secondItem="ZCx-x8-8FH" secondAttribute="trailing" id="ivK-j0-5Bn"/>
+                            <constraint firstAttribute="bottom" secondItem="rkP-kj-3Eq" secondAttribute="bottom" id="jL1-e3-ElD"/>
+                            <constraint firstAttribute="bottom" secondItem="Qs6-US-WPN" secondAttribute="bottom" id="rxh-29-Ldu"/>
+                            <constraint firstItem="rkP-kj-3Eq" firstAttribute="trailing" secondItem="ZCx-x8-8FH" secondAttribute="trailing" id="vyZ-sF-TYL"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bigView" destination="rkP-kj-3Eq" id="BuN-f4-6av"/>
+                        <outlet property="codeTf1" destination="iiG-QZ-znT" id="Q9x-t7-9md"/>
+                        <outlet property="codeTf2" destination="WTI-rF-aDO" id="SN8-E2-TPf"/>
+                        <outlet property="codeTf3" destination="RV2-Ep-FyR" id="PVA-oX-dhF"/>
+                        <outlet property="codeTf4" destination="4J0-m4-CGa" id="VA2-Dh-WpI"/>
+                        <outlet property="popupView" destination="Qs6-US-WPN" id="fCp-S7-YiH"/>
+                        <outlet property="resendCodeBtn" destination="CsP-nL-6qL" id="ekF-IA-S4L"/>
+                        <outlet property="timeLbl" destination="5Bo-L2-DXh" id="OkD-4h-kSt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ly7-12-Z63" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="250.72463768115944" y="124.55357142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="LblColor1">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="LblColor2">
+            <color red="0.48600000143051147" green="0.48600000143051147" blue="0.49000000953674316" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="MainColor">
+            <color red="0.96100002527236938" green="0.68999999761581421" blue="0.70999997854232788" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

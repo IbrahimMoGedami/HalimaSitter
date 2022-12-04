@@ -1,0 +1,24 @@
+
+/* Class = "UILabel"; text = "View Previous Orders"; ObjectID = "2hd-kj-oES"; */
+"2hd-kj-oES.text" = "عرض الطلبات السابقة";
+
+/* Class = "UILabel"; text = "Orders"; ObjectID = "6Rw-dt-Tyj"; */
+"6Rw-dt-Tyj.text" = "الطلبات";
+
+/* Class = "UILabel"; text = "Welcome to Halima, Follow your Orders"; ObjectID = "6zN-GN-lMO"; */
+"6zN-GN-lMO.text" = "مرحبًا بكم في حليمة ، اتبع  طلباتك";
+
+/* Class = "UILabel"; text = "Hello"; ObjectID = "BoW-5M-CUh"; */
+"BoW-5M-CUh.text" = "مرحبا";
+
+/* Class = "UILabel"; text = "Previous Orders"; ObjectID = "L8k-eO-qsu"; */
+"L8k-eO-qsu.text" = "الطلبات السابقة";
+
+/* Class = "UILabel"; text = "View Current Orders"; ObjectID = "Q5k-WT-WC6"; */
+"Q5k-WT-WC6.text" = "عرض الطلبات الحالية";
+
+/* Class = "UILabel"; text = "View upcoming Bookings"; ObjectID = "Zfi-FS-C6i"; */
+"Zfi-FS-C6i.text" = "عرض الحجوزات القادمة";
+
+/* Class = "UILabel"; text = "Booking"; ObjectID = "Zz5-wj-thq"; */
+"Zz5-wj-thq.text" = "حجوزاتي";

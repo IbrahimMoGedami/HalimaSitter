@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Single Image View Controller-->
+        <scene sceneID="a6Z-L2-R4Y">
+            <objects>
+                <viewController storyboardIdentifier="SingleImageViewController" id="L6Q-B2-Azt" customClass="SingleImageViewController" customModule="Halima" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PSe-63-GJb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tjX-ac-cl0">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vsa-xx-wxA">
+                                <rect key="frame" x="40" y="248" width="334" height="400"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="vIc-7d-Fnj"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="PLG-CK-0lm"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.32520869006849318" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="vsa-xx-wxA" firstAttribute="centerY" secondItem="PSe-63-GJb" secondAttribute="centerY" id="PsD-rS-Zwo"/>
+                            <constraint firstItem="PLG-CK-0lm" firstAttribute="trailing" secondItem="vsa-xx-wxA" secondAttribute="trailing" constant="40" id="TUG-lq-Dn1"/>
+                            <constraint firstItem="vsa-xx-wxA" firstAttribute="centerX" secondItem="PSe-63-GJb" secondAttribute="centerX" id="YUY-Xt-aEc"/>
+                            <constraint firstItem="tjX-ac-cl0" firstAttribute="leading" secondItem="PLG-CK-0lm" secondAttribute="leading" id="aLp-IG-6LR"/>
+                            <constraint firstItem="tjX-ac-cl0" firstAttribute="top" secondItem="PSe-63-GJb" secondAttribute="top" id="gu7-Xm-fu8"/>
+                            <constraint firstAttribute="bottom" secondItem="tjX-ac-cl0" secondAttribute="bottom" id="ptn-Tf-B5P"/>
+                            <constraint firstItem="vsa-xx-wxA" firstAttribute="leading" secondItem="PLG-CK-0lm" secondAttribute="leading" constant="40" id="q9A-fl-H5n"/>
+                            <constraint firstItem="PLG-CK-0lm" firstAttribute="trailing" secondItem="tjX-ac-cl0" secondAttribute="trailing" id="wog-nY-koH"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bigView" destination="tjX-ac-cl0" id="VaV-OC-U16"/>
+                        <outlet property="singleImage" destination="vsa-xx-wxA" id="crP-l6-kmy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hfM-Hw-5xM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="42.028985507246382" y="81.696428571428569"/>
+        </scene>
+    </scenes>
+</document>

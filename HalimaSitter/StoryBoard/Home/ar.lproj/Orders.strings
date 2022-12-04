@@ -1,0 +1,9 @@
+
+/* Class = "UIButton"; normalTitle = "Add Rate"; ObjectID = "EeH-C6-PzG"; */
+"EeH-C6-PzG.normalTitle" = "اضف تقيم";
+
+/* Class = "UILabel"; text = "My Orders"; ObjectID = "Efm-Vd-dht"; */
+"Efm-Vd-dht.text" = "الطلبات";
+
+/* Class = "UILabel"; text = "No Order Tell Now"; ObjectID = "dVy-bv-1Ib"; */
+"dVy-bv-1Ib.text" = "لاتوجود طلبات لان";

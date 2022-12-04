@@ -1,0 +1,115 @@
+/* 
+  Localizable.strings
+  HalimaSitter
+
+  Created by Moustafa on 03/08/2021.
+  
+*/
+// MARK: - Alert
+
+"Error" = "Error";
+"Success" = "Success";
+"OK" = "OK";
+"Info" = "Info";
+"Sar" = "Sar";
+"Hour" = "Hour";
+"Images" = "Images";
+"Files" = "Files";
+"Cancel" = "Cancel";
+"AddCertificates" = "Add Certificates";
+"Select" = "Please Select an Option";
+// MARK: - Register
+
+"Register1" = "All Fields Are Required";
+"Register2" = "The Minimum Char for a  Name is 3 Letters";
+"Register3" = "Email must be a Valid E-mail";
+"Register4" = "The Country Code Must be Chosen";
+"Register5" = "It Should be the Phone Number =  ";
+"Register6" = "The Minimum Char for a  Nationality is 3 Letters";
+"Register7" = "The Minimum Char for a  Password is 6 Letters";
+"Register8" = "Error in Phone or Password";
+"Register9" = "Address Must be Entered";
+"Register10" = "The Nursery Name must be Entered";
+"Register11" = "The Minimum Char for a Nursery Name is 3 Letters";
+"Register12" = "A Copy of the Rental Contract must be Entered";
+"Register13" = "Residency Photo must be Entered";
+"Register14" = "You must Enter a Personal Photo";
+"Register15" = "A Copy of the tax Number must be Entered";
+"Register16" = "A Copy of the Commercial Register  must be Entered";
+"Add tax certificate" = "Add tax certificate";
+
+// MARK: - Activation Code
+
+"ValidationCode1" = "All Fields Are Required";
+"ValidationCode2" = "Code will Reach you in";
+"ValidationCode3" = "Seconds";
+
+// MARK: - Reset Password
+
+"ResetPassword1" = "All Fields Are Required";
+"ResetPassword2" = "Password is at Least 6 Characters Long";
+"ResetPassword3" = "The Two Passwords Must Match";
+
+// MARK: - Edit Profile
+
+"editProfile1" = "The Data has been Modified Successfully";
+
+// MARK: - Add Room
+
+"AddRoom1" = "The Name of the Room must be Written";
+"AddRoom2" = "The room must have at least one picture";
+
+// MARK: - Add BabySiter
+
+"AddBabySiter1" = "The Name of the BabySiter must be Written";
+
+// MARK: - Text Failed Place Holder
+
+"Phone" = "Phone";
+"Name" = "Name";
+"Email" = "Email";
+"Nationality" = "Nationality";
+"Password" = "Password";
+"NurseryName" = "Nursery Name";
+"Address" = "Address";
+"Lease" = "Lease";
+"ResidencePhoto" = "ID Photo";
+"ProfileImage" = "Profile Image";
+"TaxNumber" = "Tax Number";
+"CommercialRegister" = "Commercial Register";
+"License type" = "License type";
+"Known" = "Known";
+"Free work" = "Free work";
+"Home nursery license" = "Home nursery license";
+
+// MARK: - Image Picker
+
+"imagePicker1" = "Photo Source";
+"imagePicker2" = "Choose A Sourece";
+"imagePicker3" = "Camera";
+"imagePicker4" = "Photo Library";
+"imagePicker5" = "Cancel";
+
+
+// MARK: - Tab Bar
+
+"tab1" = "Home";
+"tab2" = "Notification";
+"tab3" = "Message";
+"tab4" = "Profile";
+
+
+// MARK: - My Orders Detailes
+
+"OrderDetailes1" = "Yes";
+"OrderDetailes2" = "No";
+"OrderDetailes3" = "No Admin";
+
+// MARK: - Home
+
+"Home3" = "Rate";
+
+
+// MARK: - Add Rate
+
+"AddRate1" = "Write your Review";

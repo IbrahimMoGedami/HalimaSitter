@@ -1,0 +1,20 @@
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "3oM-Mf-dAf"; */
+"3oM-Mf-dAf.text" = "Label";
+
+/* Class = "UILabel"; text = "Welcome to Halima"; ObjectID = "7b5-li-Ne5"; */
+"7b5-li-Ne5.text" = "مرحبا في حليمة";
+
+/* Class = "UILabel"; text = "Register"; ObjectID = "H25-yD-MTV"; */
+"H25-yD-MTV.text" = "تسجيل حساب";
+
+/* Class = "UILabel"; text = "+966"; ObjectID = "LMT-Bt-rvP"; */
+"LMT-Bt-rvP.text" = "+٩٦٦";
+
+/* Class = "UITextField"; placeholder = "........"; ObjectID = "lqv-RJ-PPh"; */
+"lqv-RJ-PPh.placeholder" = "........";
+
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "tUi-82-gfT"; */
+"tUi-82-gfT.normalTitle" = "التالي";
+
+"gKS-z1-vm1.text" = "ارفع صورة الشهادة الضريبية";

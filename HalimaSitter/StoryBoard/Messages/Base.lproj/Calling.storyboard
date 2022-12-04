@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Calling View Controller-->
+        <scene sceneID="NGA-hs-tGb">
+            <objects>
+                <viewController storyboardIdentifier="CallingViewController" modalPresentationStyle="fullScreen" id="fRF-1C-UyU" customClass="CallingViewController" customModule="Halima" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jGD-uO-RT0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="head" translatesAutoresizingMaskIntoConstraints="NO" id="024-Sf-jfB">
+                                <rect key="frame" x="144.5" y="134" width="125" height="125"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="125" id="A41-dX-JO5"/>
+                                    <constraint firstAttribute="width" secondItem="024-Sf-jfB" secondAttribute="height" id="QKx-Ei-fmH"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="alq-Ay-KPr">
+                                <rect key="frame" x="179.5" y="707" width="55" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="55" id="C2r-OU-5zh"/>
+                                    <constraint firstAttribute="width" secondItem="alq-Ay-KPr" secondAttribute="height" multiplier="1:1" id="d8R-JR-1iu"/>
+                                </constraints>
+                                <state key="normal" image="end"/>
+                                <connections>
+                                    <action selector="doHungUpPressed:" destination="fRF-1C-UyU" eventType="touchUpInside" id="HFI-87-1G5"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calling..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rw9-zi-IkX">
+                                <rect key="frame" x="174" y="372.5" width="66" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1234" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DzE-KD-hie">
+                                <rect key="frame" x="153.5" y="309" width="107.5" height="57.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="mtK-pR-G8N"/>
+                        <color key="backgroundColor" systemColor="systemBlueColor"/>
+                        <constraints>
+                            <constraint firstItem="alq-Ay-KPr" firstAttribute="centerX" secondItem="jGD-uO-RT0" secondAttribute="centerX" id="5jR-W5-lqD"/>
+                            <constraint firstItem="Rw9-zi-IkX" firstAttribute="top" secondItem="DzE-KD-hie" secondAttribute="bottom" constant="6" id="9I0-RY-cd5"/>
+                            <constraint firstItem="024-Sf-jfB" firstAttribute="top" secondItem="mtK-pR-G8N" secondAttribute="top" constant="90" id="A5q-C6-LII"/>
+                            <constraint firstItem="DzE-KD-hie" firstAttribute="centerX" secondItem="024-Sf-jfB" secondAttribute="centerX" id="KAw-O1-rad"/>
+                            <constraint firstItem="DzE-KD-hie" firstAttribute="top" secondItem="024-Sf-jfB" secondAttribute="bottom" constant="50" id="ZnE-45-G2V"/>
+                            <constraint firstItem="Rw9-zi-IkX" firstAttribute="centerX" secondItem="DzE-KD-hie" secondAttribute="centerX" id="qR8-Va-y89"/>
+                            <constraint firstItem="mtK-pR-G8N" firstAttribute="bottom" secondItem="alq-Ay-KPr" secondAttribute="bottom" constant="100" id="qfb-cS-Psd"/>
+                            <constraint firstItem="024-Sf-jfB" firstAttribute="centerX" secondItem="jGD-uO-RT0" secondAttribute="centerX" id="wix-f1-WcP"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="headImageView" destination="024-Sf-jfB" id="HPr-l0-mZd"/>
+                        <outlet property="numberLabel" destination="DzE-KD-hie" id="UYx-6z-VqN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W5M-jb-q66" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="65" y="36"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="end" width="72" height="72"/>
+        <image name="head" width="115" height="115"/>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,116 @@
+/* 
+  Localizable.strings
+  HalimaSitter
+
+  Created by Moustafa on 03/08/2021.
+  
+*/
+// MARK: - Alert
+
+"Error" = "خطا";
+"Success" = "نجاح";
+"OK" = "تاكيد";
+"Info" = "معلومات";
+"Sar" = "ريال";
+"Hour" = "ساعه";
+"Images" = "صور";
+"Files" = "ملفات";
+"Cancel" = "الغاء";
+"AddCertificates" = "اضف شهادات";
+"Select" = "الرجاء تحديد خيار";
+// MARK: - Register
+
+"Register1" = "جميع الحقول مطلوبة";
+"Register2" = "الحد الأدنى من أحرف الاسم هو 3 أحرف";
+"Register3" = "يجب أن يكون البريد الإلكتروني بريدًا إلكترونيًا صالحًا";
+"Register4" = "يجب اختيار رمز الدولة";
+"Register5" = "يجب أن يكون رقم الهاتف = ";
+"Register6" = "الحد الأدنى من أحرف الجنسية هو 3 أحرف";
+"Register7" = "الحد الأدنى من أحرف كلمة السر هو 6أحرف";
+"Register8" = "خطأ في الهاتف أو كلمة المرور";
+"Register9" = "يجب إدخال العنوان";
+"Register10" = "يجب إدخال اسم الحضانة";
+"Register11" = "الحد الأدنى من أحرف الاسم الحضانة هو ٣ أحرف";
+"Register12" = "يجب إدخال نسخة من عقد الإيجار";
+"Register13" = "يجب إدخال صورة الإقامة";
+"Register14" = "يجب عليك إدخال صورة شخصية";
+"Register15" = "يجب إدخال نسخة من الرقم الضريبي";
+"Register16" = "يجب إدخال نسخة من السجل التجاري";
+"Add tax certificate" = "إرفق الشهادة الضريبية";
+
+// MARK: - Activation Code
+
+"ValidationCode1" = "جميع الحقول مطلوبة";
+"ValidationCode2" = "سوف يصل إليك الكود";
+"ValidationCode3" = "ثواني";
+
+// MARK: - Reset Password
+
+"ResetPassword1" = "جميع الحقول مطلوبة";
+"ResetPassword2" = "كلمة المرور لا تقل عن 6 أحرف";
+"ResetPassword3" = "يجب أن تتطابق كلمتا المرور";
+
+// MARK: - Edit Profile
+
+"editProfile1" = "تم تعديل البيانات بنجاح";
+
+// MARK: - Add Room
+
+"AddRoom1" = "يجب كتابة اسم الغرفة";
+"AddRoom2" = "يجب أن تحتوي الغرفة على صورة واحدة على الأقل";
+
+// MARK: - Add BabySiter
+
+"AddBabySiter1" = "يجب كتابة اسم المربية ";
+
+// MARK: - Text Failed Place Holder
+
+"Phone" = "رقم الهاتف";
+"Name" = "الاسم";
+"Email" = "البريد الالكتروني";
+"Nationality" = "الجنسية";
+"Password" = "كلمة السر";
+"NurseryName" = "اسم الحضانة";
+"Address" = "العنوان";
+"Lease" = "عقد الايجار";
+"ResidencePhoto" = "صورة الهوية";
+"ProfileImage" = "صورة الملف الشخصي";
+"TaxNumber" = "الرقم الضريبي";
+"CommercialRegister" = "السجل التجاري";
+"License type" = "نوع الترخيص";
+"Known" = "معروف";
+"Free work" = "عمل حر";
+"Home nursery license" = "ترخيص حضانة منزلية";
+
+
+// MARK: - Image Picker
+
+"imagePicker1" = "مصدر الصورة";
+"imagePicker2" = "أختر مصدر الصورة";
+"imagePicker3" = "الكاميرا";
+"imagePicker4" = "مكتبة الصور";
+"imagePicker5" = "الغاء";
+
+
+// MARK: - Tab Bar
+
+"tab1" = "الرئيسية";
+"tab2" = "الاشعارات";
+"tab3" = "الرسائل";
+"tab4" = "الملف الشخصي";
+
+
+// MARK: - My Orders Detailes
+
+"OrderDetailes1" = "نعم";
+"OrderDetailes2" = "لا";
+"OrderDetailes3" = "لايوجود مشرف";
+
+// MARK: - Home
+
+"Home3" = "تقيم";
+
+
+// MARK: - Add Rate
+
+"AddRate1" = "اكتب مراجعتك";

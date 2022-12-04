@@ -1,0 +1,9 @@
+
+/* Class = "UIButton"; normalTitle = "Add Room"; ObjectID = "Ioj-wN-mzP"; */
+"Ioj-wN-mzP.normalTitle" = "أضف غرف";
+
+/* Class = "UILabel"; text = "There is no Room"; ObjectID = "sdu-U7-fKO"; */
+"sdu-U7-fKO.text" = "لا توجود غرف";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "tId-Mh-CgS"; */
+"tId-Mh-CgS.text" = "Label";

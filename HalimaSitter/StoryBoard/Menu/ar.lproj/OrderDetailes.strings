@@ -1,0 +1,42 @@
+
+/* Class = "UILabel"; text = "Order Stats :"; ObjectID = "5a9-uM-MJU"; */
+"5a9-uM-MJU.text" = "حالة الطلب :";
+
+/* Class = "UILabel"; text = "Data Of Brith :"; ObjectID = "JLq-by-VHL"; */
+"JLq-by-VHL.text" = "تاريخ الميلاد :";
+
+/* Class = "UILabel"; text = "Name :"; ObjectID = "OnN-um-0J0"; */
+"OnN-um-0J0.text" = "الاسم :";
+
+/* Class = "UILabel"; text = "Incubator:"; ObjectID = "QY0-XI-8NT"; */
+"QY0-XI-8NT.text" = "المربية :";
+
+/* Class = "UILabel"; text = "Diseases :"; ObjectID = "T9E-MI-e67"; */
+"T9E-MI-e67.text" = "الامراض :";
+
+/* Class = "UILabel"; text = "Children"; ObjectID = "TVW-PZ-lYk"; */
+"TVW-PZ-lYk.text" = "الاطفال";
+
+/* Class = "UILabel"; text = "Order Date :"; ObjectID = "YFk-aH-b2l"; */
+"YFk-aH-b2l.text" = "تاريخ الطلب";
+
+/* Class = "UIButton"; normalTitle = "Tracking"; ObjectID = "aTl-qn-dgn"; */
+"aTl-qn-dgn.normalTitle" = "التتبع";
+
+/* Class = "UILabel"; text = "Monitor"; ObjectID = "aao-I0-mgi"; */
+"aao-I0-mgi.text" = "المشرف";
+
+/* Class = "UILabel"; text = "Hobby :"; ObjectID = "b41-Vl-UBC"; */
+"b41-Vl-UBC.text" = "الهواية";
+
+/* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "cHD-ct-rfs"; */
+"cHD-ct-rfs.normalTitle" = "الالغاء";
+
+/* Class = "UILabel"; text = ":"; ObjectID = "kaC-x4-d2w"; */
+"kaC-x4-d2w.text" = ":";
+
+/* Class = "UILabel"; text = "Order Detailes"; ObjectID = "q57-ch-fq7"; */
+"q57-ch-fq7.text" = "تفاصيل الطلب";
+
+/* Class = "UILabel"; text = "Address :"; ObjectID = "qms-XU-Wfk"; */
+"qms-XU-Wfk.text" = "العنوان";

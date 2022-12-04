@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="regular.ttf">
+            <string>DINNextLTArabic-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Wating To Accpeted View Controller-->
+        <scene sceneID="RWN-LW-UpR">
+            <objects>
+                <viewController storyboardIdentifier="WatingToAccpetedViewController" id="y7M-5x-K3f" customClass="WatingToAccpetedViewController" customModule="HalimaSitter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ed1-fe-k2t">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Sharing articles-pana" translatesAutoresizingMaskIntoConstraints="NO" id="Lgo-R0-5Rl">
+                                <rect key="frame" x="50" y="241" width="314" height="314"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thank you for your Registration" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4W8-IY-B5h">
+                                <rect key="frame" x="50" y="579" width="314" height="23.5"/>
+                                <fontDescription key="fontDescription" name="DINNextLTArabic-Regular" family="DIN Next LT Arabic" pointSize="20"/>
+                                <color key="textColor" name="MainColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Application is Currently being Reviewed and is Awaiting Approval" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6X2-ft-jFK">
+                                <rect key="frame" x="50" y="610.5" width="314" height="40"/>
+                                <fontDescription key="fontDescription" name="DINNextLTArabic-Regular" family="DIN Next LT Arabic" pointSize="17"/>
+                                <color key="textColor" name="LblColor3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="QiG-xx-mt2"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6X2-ft-jFK" firstAttribute="leading" secondItem="QiG-xx-mt2" secondAttribute="leading" constant="50" id="Fzm-w9-5cd"/>
+                            <constraint firstItem="Lgo-R0-5Rl" firstAttribute="height" secondItem="ed1-fe-k2t" secondAttribute="height" multiplier="0.35" id="JJ6-jm-q9u"/>
+                            <constraint firstItem="4W8-IY-B5h" firstAttribute="centerX" secondItem="ed1-fe-k2t" secondAttribute="centerX" id="LSM-ei-osL"/>
+                            <constraint firstItem="QiG-xx-mt2" firstAttribute="trailing" secondItem="Lgo-R0-5Rl" secondAttribute="trailing" constant="50" id="Zwn-fa-Aua"/>
+                            <constraint firstItem="4W8-IY-B5h" firstAttribute="top" secondItem="Lgo-R0-5Rl" secondAttribute="bottom" constant="24" id="fl0-gZ-ocp"/>
+                            <constraint firstItem="4W8-IY-B5h" firstAttribute="leading" secondItem="QiG-xx-mt2" secondAttribute="leading" constant="50" id="ksf-1z-VTr"/>
+                            <constraint firstItem="Lgo-R0-5Rl" firstAttribute="leading" secondItem="QiG-xx-mt2" secondAttribute="leading" constant="50" id="nQz-eQ-EWq"/>
+                            <constraint firstItem="Lgo-R0-5Rl" firstAttribute="centerX" secondItem="ed1-fe-k2t" secondAttribute="centerX" id="qoa-tT-LTP"/>
+                            <constraint firstItem="6X2-ft-jFK" firstAttribute="centerX" secondItem="ed1-fe-k2t" secondAttribute="centerX" id="rS4-tQ-JA8"/>
+                            <constraint firstItem="6X2-ft-jFK" firstAttribute="top" secondItem="4W8-IY-B5h" secondAttribute="bottom" constant="8" id="vTQ-9t-Wv0"/>
+                            <constraint firstItem="Lgo-R0-5Rl" firstAttribute="centerY" secondItem="ed1-fe-k2t" secondAttribute="centerY" constant="-50" id="yp8-lU-DlJ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gzB-a2-8uZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-619" y="151"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Sharing articles-pana" width="267" height="279"/>
+        <namedColor name="LblColor3">
+            <color red="0.59200000762939453" green="0.66699999570846558" blue="0.74099999666213989" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="MainColor">
+            <color red="0.96100002527236938" green="0.68999999761581421" blue="0.70999997854232788" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

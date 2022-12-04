@@ -1,0 +1,12 @@
+
+/* Class = "UIButton"; normalTitle = "Resend Code"; ObjectID = "CsP-nL-6qL"; */
+"CsP-nL-6qL.normalTitle" = "اعادة ارسال";
+
+/* Class = "UILabel"; text = "Enter the code"; ObjectID = "PE0-uJ-cs6"; */
+"PE0-uJ-cs6.text" = "ادخل الكود";
+
+/* Class = "UIButton"; normalTitle = "Send"; ObjectID = "VOD-A1-rct"; */
+"VOD-A1-rct.normalTitle" = "ارسال";
+
+/* Class = "UILabel"; text = "Enter the four-digit code to be able to change the password"; ObjectID = "vnm-dP-Ine"; */
+"vnm-dP-Ine.text" = "أدخل الرمز المكون من أربعة أرقام لتتمكن من تغيير كلمة المرور";

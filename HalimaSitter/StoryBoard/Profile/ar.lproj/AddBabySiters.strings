@@ -1,0 +1,15 @@
+
+/* Class = "UILabel"; text = "Degree"; ObjectID = "I69-83-Std"; */
+"I69-83-Std.text" = "الدرجة العلمية";
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "Lpq-Dz-Kx8"; */
+"Lpq-Dz-Kx8.text" = "الاسم";
+
+/* Class = "UILabel"; text = "Add"; ObjectID = "OSl-xl-482"; */
+"OSl-xl-482.text" = "اضافة";
+
+/* Class = "UILabel"; text = "BabySiter"; ObjectID = "cRF-S0-EqD"; */
+"cRF-S0-EqD.text" = "مربية";
+
+/* Class = "UIButton"; normalTitle = "Save"; ObjectID = "zdy-XA-cFf"; */
+"zdy-XA-cFf.normalTitle" = "حفظ";

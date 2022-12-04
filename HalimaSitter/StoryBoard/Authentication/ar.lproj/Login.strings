@@ -1,0 +1,27 @@
+
+/* Class = "UILabel"; text = "Welcome to Halima"; ObjectID = "Hja-3c-aHs"; */
+"Hja-3c-aHs.text" = "مرحبا في حليمة";
+
+/* Class = "UIButton"; normalTitle = "Login"; ObjectID = "J4n-S4-Dqq"; */
+"J4n-S4-Dqq.normalTitle" = "تسجيل الدخول";
+
+/* Class = "UITextField"; placeholder = "......"; ObjectID = "U5L-ZC-aiB"; */
+"U5L-ZC-aiB.placeholder" = "......";
+
+/* Class = "UILabel"; text = "+966"; ObjectID = "X2G-ir-hPS"; */
+"X2G-ir-hPS.text" = "+٩٦٦";
+
+/* Class = "UIButton"; normalTitle = "Register"; ObjectID = "bwl-iD-naP"; */
+"bwl-iD-naP.normalTitle" = "تسجيل حساب";
+
+/* Class = "UIButton"; normalTitle = "Forget Password"; ObjectID = "fTF-0O-Nwc"; */
+"fTF-0O-Nwc.normalTitle" = "نسيت كلمة السر";
+
+/* Class = "UILabel"; text = "Don't have an account?"; ObjectID = "gaL-i3-fz5"; */
+"gaL-i3-fz5.text" = "ليس لديك حساب؟";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "w3L-lx-ixC"; */
+"w3L-lx-ixC.text" = "Label";
+
+/* Class = "UILabel"; text = "Login"; ObjectID = "yQ6-ap-gWt"; */
+"yQ6-ap-gWt.text" = "تسجيل دخول";

@@ -1,0 +1,9 @@
+
+/* Class = "UIButton"; normalTitle = "Add BabySiter"; ObjectID = "90d-Uj-hGj"; */
+"90d-Uj-hGj.normalTitle" = "اضف مربية";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "hmv-eW-COF"; */
+"hmv-eW-COF.text" = "Label";
+
+/* Class = "UILabel"; text = "There is no Baby Siter"; ObjectID = "wT3-yt-9VQ"; */
+"wT3-yt-9VQ.text" = "لاتوجود مربيات";

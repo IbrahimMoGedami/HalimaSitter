@@ -1,0 +1,9 @@
+
+/* Class = "UIButton"; normalTitle = "Save"; ObjectID = "AQk-42-erE"; */
+"AQk-42-erE.normalTitle" = "حفظ";
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "MKv-hb-tKr"; */
+"MKv-hb-tKr.text" = "الاسم";
+
+/* Class = "UILabel"; text = "Add Room Photos"; ObjectID = "aUO-OS-3Xa"; */
+"aUO-OS-3Xa.text" = "أضف صور الغرفة";
