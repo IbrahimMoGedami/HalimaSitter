@@ -19,8 +19,6 @@ class NurseryTabBarViewController: UITabBarController  , UITabBarControllerDeleg
         if let tabBarChoose = tabBarChoose {
             self.selectedIndex = tabBarChoose
         }
-        
-        // Do any additional setup after loading the view.
     }
     
     

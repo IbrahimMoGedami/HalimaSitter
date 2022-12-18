@@ -12,6 +12,7 @@ target 'HalimaSitter' do
   pod 'IQKeyboardManagerSwift', '6.0.4'
   pod 'MOLH'
   pod 'Alamofire'
+  pod 'FirebaseMessaging'
   pod 'MaterialComponents/TextControls+OutlinedTextFields'
   pod 'ImageSlideshow'
   pod "ImageSlideshow/Kingfisher"

@@ -23,7 +23,7 @@ class SingleChatViewController: UIViewController {
 
     var  messages = [Messages]()
     
-    lazy var appleCallKit = CallCenter(delegate: self)
+//    lazy var appleCallKit = CallCenter(delegate: self)
     var callerNumber: String?
     
     var prepareToVideoChat: (() -> ())?
@@ -47,7 +47,7 @@ class SingleChatViewController: UIViewController {
             let rtm = AgoraRtm.shared()
             let path = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first! + "/rtm.log"
             rtm.setLogPath(path)
-            rtm.inviterDelegate = self
+//            rtm.inviterDelegate = self
             // create local number
             let rand = arc4random_uniform(UInt32(9999 + 1 - 1000)) + 1000
             // localNumber = "\(rand)"
@@ -60,12 +60,12 @@ class SingleChatViewController: UIViewController {
             }
             
             guard let kit = AgoraRtm.shared().kit else {
-                self.showAlert("AgoraRtmKit nil")
+//                self.showAlert("AgoraRtmKit nil")
                 return
             }
             
             kit.login(account: localNumber, token: nil) { [unowned self] (error) in
-                self.showAlert(error.localizedDescription)
+//                self.showAlert(error.localizedDescription)
             }
         }
         
@@ -90,15 +90,21 @@ class SingleChatViewController: UIViewController {
         }
     }
     @IBAction func voiseCallBtnPressed(_ sender: UIButton) {
+        print(parents?.id) 
+        getAgoraToken(parentId: parents?.id ?? 0, type: .voice)
     }
+    
     @IBAction func videoCallBtnPressed(_ sender: UIButton) {
-        let vc = AppStoryboard.Calling.viewController(viewControllerClass: CallingViewController.self)
-        if let localNumber = localNumber  {
-        vc.localNumber = localNumber
-        vc.remoteNumber = "\(remotNumber)"
-        vc.delegate = self
-        callingVC(vc, startOutgoing: "\(remotNumber)")
-        present(vc, animated: true, completion: nil)
-        }
+//        let vc = AppStoryboard.Calling.viewController(viewControllerClass: VideoCallViewController.self)
+//        if let localNumber = localNumber  {
+//        vc.localNumber = localNumber
+//        vc.remoteNumber = "\(remotNumber)"
+//        vc.delegate = self
+//        callingVC(vc, startOutgoing: "\(remotNumber)")
+//        present(vc, animated: true, completion: nil)
+//        }
+        print(parents?.id)
+        getAgoraToken(parentId: parents?.id ?? 0, type: .video)
+        
     }
 }

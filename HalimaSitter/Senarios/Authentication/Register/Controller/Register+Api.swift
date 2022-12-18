@@ -57,7 +57,7 @@ extension RegisterViewController : NVActivityIndicatorViewable   {
     func getRegisterData(){
         if validateRegister(){
         self.startAnimating()
-            Services.getRegister(name: nameTf.text!, phone: phoneTf.text!, countryId: countryId!, email: emailTf.text!, fireBase: UserDefault.getFireBaseToken(), nationality: nationalyTf.text!, password: passwordTf.text!, type: userType!, nurseryName: nurresyNameTf.text ?? "", lat: latitude!, lng: longitude!, address: address!, callback: { [weak self] (result,stats)  in
+            Services.getRegister(name: nameTf.text!, phone: phoneTf.text!, countryId: countryId!, email: emailTf.text!, fireBase: FirebaseMessagingManger.firebaseMessagingToken, nationality: nationalyTf.text!, password: passwordTf.text!, type: userType!, nurseryName: nurresyNameTf.text ?? "", lat: latitude!, lng: longitude!, address: address!, callback: { [weak self] (result,stats)  in
             guard let self = self else {return}
             self.stopAnimating()
             print(result)

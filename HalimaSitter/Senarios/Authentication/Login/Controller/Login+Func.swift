@@ -1,6 +1,6 @@
 //
 //  Login+Func.swift
-//  Halima
+//  Halima 36273
 //
 //  Created by Moustafa on 7/5/21.
 //
@@ -12,7 +12,6 @@ import MOLH
 import Lottie
 
 extension LoginViewController  {
-  
     
     func updateDesign()  {
         setUpTableView()
@@ -77,10 +76,31 @@ extension LoginViewController  {
     
     //MARK: - Func to Save Data In User Deafult
     
+//    func getUserData() -> UserData? {
+//        let defaults = UserDefaults.standard
+//        guard let savedPerson = defaults.object(forKey: userDataKey) as? Data,
+//              let loadedData = try? JSONDecoder().decode(UserData.self, from: savedPerson)
+//        else { return nil }
+//        
+//        return loadedData
+//    }
+//    
+//    func setUserData(_ newValue: UserData?) {
+//        // guard let newValue = newValue else { return }
+//        let encoder = JSONEncoder()
+//        if let encoded = try? encoder.encode(newValue) {
+//            let defaults = UserDefaults.standard
+//            defaults.set(encoded, forKey: userDataKey)
+//        } else {
+//            fatalError("Unable To Save User Data")
+//        }
+//    }
+    
     func saveDataInUserDeafults()  {
         
         if let id = register?.data?.id {
             UserDefault.setId(id)
+            print(id)
         }
         if let name = register?.data?.username {
             UserDefault.setName(name)

@@ -20,6 +20,7 @@ class URLs {
     static let register = baseURL + "Auth_general/register"
     static let completeRegister = baseURL + "Auth_private/complete"
     static let countries = baseURL + "Location/countries"
+    static let licenses = baseURL + "general/getLicenseTypes"
     static let login = baseURL + "Auth_general/login"
     static let forgetPassword = baseURL + "Auth_general/forget_password"
     static let validationCode = baseURL + "Auth_private/check_password_code"
@@ -54,6 +55,6 @@ class URLs {
     static let setting = baseURL + "general/getSettings"
     static let chat = baseURL + "chatData"
     static let notification = baseURL + "Auth_private/myNotification"
-
+    static let getAgoraToken = baseURL + "call_token" // ?parent_id=497
     
 }

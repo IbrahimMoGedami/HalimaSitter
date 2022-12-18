@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -11,7 +12,7 @@
         <!--Voice View Controller-->
         <scene sceneID="PUd-GF-BCy">
             <objects>
-                <viewController storyboardIdentifier="VoiceViewController" id="xMG-W0-AFX" customClass="VoiceViewController" customModule="Halima" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="VoiceViewController" modalPresentationStyle="fullScreen" id="xMG-W0-AFX" customClass="VoiceViewController" customModule="HalimaSitter" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="VTh-nI-t9e"/>
                         <viewControllerLayoutGuide type="bottom" id="3hx-yX-zbe"/>
@@ -21,7 +22,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zwM-Du-3eF">
-                                <rect key="frame" x="0.0" y="808" width="414" height="88"/>
+                                <rect key="frame" x="0.0" y="708" width="414" height="88"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KSU-ko-6gD" userLabel="mute_Button">
                                         <rect key="frame" x="103" y="12" width="64" height="64"/>
@@ -60,7 +61,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="KSU-ko-6gD" firstAttribute="centerY" secondItem="s84-7c-4Ql" secondAttribute="centerY" id="0Pd-9k-aRT"/>
                                     <constraint firstAttribute="height" constant="88" id="5Yv-Ct-oxk"/>
@@ -71,17 +72,27 @@
                                     <constraint firstItem="2NF-50-F9b" firstAttribute="centerY" secondItem="s84-7c-4Ql" secondAttribute="centerY" id="wJX-G6-DbG"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rD3-hF-Q5f">
+                                <rect key="frame" x="186" y="148" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="rBd-c1-7oK"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" name="MainColor"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="zwM-Du-3eF" secondAttribute="bottom" id="7Vw-z7-bsZ"/>
+                            <constraint firstAttribute="bottom" secondItem="zwM-Du-3eF" secondAttribute="bottom" constant="100" id="7Vw-z7-bsZ"/>
+                            <constraint firstItem="rD3-hF-Q5f" firstAttribute="centerX" secondItem="rBd-c1-7oK" secondAttribute="centerX" id="Ibi-gB-prX"/>
+                            <constraint firstItem="rD3-hF-Q5f" firstAttribute="top" secondItem="rBd-c1-7oK" secondAttribute="top" constant="100" id="WxR-xF-qkG"/>
                             <constraint firstItem="zwM-Du-3eF" firstAttribute="leading" secondItem="sdy-ls-ARZ" secondAttribute="leading" id="es8-Hc-aCi"/>
                             <constraint firstAttribute="trailing" secondItem="zwM-Du-3eF" secondAttribute="trailing" id="t2d-tb-F6P"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="controlButtonsView" destination="zwM-Du-3eF" id="Kj3-V9-gMz"/>
+                        <outlet property="labelTimer" destination="rD3-hF-Q5f" id="jyj-ve-k7K"/>
+                        <outlet property="switchSpekerBtn" destination="2NF-50-F9b" id="5ki-lI-ujk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sq2-zY-A8j" sceneMemberID="firstResponder"/>
@@ -95,5 +106,8 @@
         <image name="btn_mute_blue" width="40" height="40"/>
         <image name="btn_speaker" width="40" height="40"/>
         <image name="btn_speaker_blue" width="40" height="40"/>
+        <namedColor name="MainColor">
+            <color red="0.96100002527236938" green="0.68999999761581421" blue="0.70999997854232788" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>

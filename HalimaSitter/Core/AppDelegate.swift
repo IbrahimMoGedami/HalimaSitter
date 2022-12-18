@@ -6,6 +6,11 @@ import MOLH
 import Firebase
 import Messages
 import AVFoundation
+import UserNotifications
+import FirebaseMessaging
+// 2TTF7TCYNS
+//AAAA3w29cNk:APA91bHWl6BiXTOxuVJzYpR70AxQKy6Igaim3bT38IORfbhI49uFsvph6rGwVbG40IG1vPFG_EHlwvILvmCbULM8EAXWkUoDdLjwiQHksiiVMO6As2uti32tqU5IFo76flmdztyyvQf5
+// KeyID: UYH7FX4JA6
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate , MOLHResetable{
@@ -28,26 +33,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate , MOLHResetable{
         GMSPlacesClient.provideAPIKey("AIzaSyCgZIwl1DqxdJbv7aec2Vnf0GkP5p4QWpo")
         IQKeyboardManager.shared.enable = true
         MOLH.shared.activate(true)
-       FirebaseApp.configure()
-        
+        setupNotification(application: application)
         DispatchQueue.main.async {
-                if  UserDefault.getcheckLogin() == true {
-                    if UserDefault.getUserType() == 1 {
+            if  UserDefault.getUserData()?.token != nil {
+//                if UserDefault.getUserType() == 1 {
                     let storBoared = UIStoryboard(name: "Tab", bundle: nil)
                     let vc = storBoared.instantiateViewController(withIdentifier: "NurseryTabBarViewController") as! NurseryTabBarViewController //NurseryTabBarViewController
-                    self.window?.makeKeyAndVisible()
                     self.window?.rootViewController = vc
-                    }else {
-
-                    }
-                }else{
-                    let storBoared = UIStoryboard(name: "Login", bundle: nil)
-                    let vc = storBoared.instantiateViewController(withIdentifier: "Login")
-                    self.window?.makeKeyAndVisible()
-                    self.window?.rootViewController = vc
-                }
+                    //                    }else {
+                    //
+//                }
+            }else{
+                let storBoared = UIStoryboard(name: "Login", bundle: nil)
+                let vc = storBoared.instantiateViewController(withIdentifier: "Login")
+                self.window?.rootViewController = vc
+            }
         }
-
+        
+        self.window?.makeKeyAndVisible()
         return true
     }
     
@@ -76,3 +79,136 @@ class AppDelegate: UIResponder, UIApplicationDelegate , MOLHResetable{
     
 }
 
+
+
+extension AppDelegate: UNUserNotificationCenterDelegate, MessagingDelegate {
+    
+    func setupNotification(application: UIApplication) {
+        FirebaseApp.configure()
+        Messaging.messaging().delegate = self
+        UNUserNotificationCenter.current().delegate = self
+        UIApplication.shared.applicationIconBadgeNumber = 0
+        let authOptions: UNAuthorizationOptions = [.alert, .badge, .sound]
+        UNUserNotificationCenter.current().requestAuthorization(options: authOptions) { (_, _) in
+            DispatchQueue.main.async {
+                application.registerForRemoteNotifications()
+            }
+        }
+    }
+    
+    func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
+        completionHandler(.newData)
+    }
+    
+    // Receive displayed notifications for iOS 10 devices.
+    func userNotificationCenter(_ center: UNUserNotificationCenter,
+                                willPresent notification: UNNotification,
+                                withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+        completionHandler([.alert, .sound, .badge])
+        let userInfo = notification.request.content.userInfo
+        print(userInfo)
+        if let messageID = userInfo["gcm.message_id"] {
+            print("Message ID: \(messageID)")
+            // handle notification  message
+            
+            
+            let dict = userInfo[AnyHashable("aps")] as! [String : Any]
+            let key = userInfo[AnyHashable("key")] as? String
+            let key_id = userInfo[AnyHashable("key_id")] as? String
+            guard let tab = window?.rootViewController as? UITabBarController else{return}
+            let channelName = userInfo[AnyHashable("channel_name")] as? String
+            let token = userInfo[AnyHashable("token")] as? String
+            guard let nav = tab.selectedViewController as? UINavigationController else{return}
+            guard let vc = nav.viewControllers.last else {return}
+            let callType = userInfo[AnyHashable("call_type")] as? String
+            if callType == "voice"{
+                let vc = AppStoryboard.Voice.viewController(viewControllerClass: VoiceViewController.self)
+                vc.AgoraChanelName = channelName ?? ""
+                vc.agoraToken = token ?? ""
+                nav.pushViewController(vc, animated: true)
+            }else if callType == "video"{
+                let vc = AppStoryboard.Video.viewController(viewControllerClass: VideoCallViewController.self)
+                vc.AgoraChanelName = channelName ?? ""
+                vc.AgoraToken = token
+                nav.pushViewController(vc, animated: true)
+            }else{
+                print("ooooooo")
+            }
+            
+            
+            let _ = "\(userInfo[AnyHashable("body")] as? String ?? "")"
+            let _ = "\(userInfo[AnyHashable("title")] as? String ?? "")"
+            
+            print(key ?? "")
+        }
+        
+        // Change this to your preferred presentation option
+        completionHandler([.sound , .alert , .badge])
+    }
+    
+    func messaging(_ messaging: Messaging, didReceiveRegistrationToken fcmToken: String?) {
+        if let fcmToken = fcmToken {
+            print("fcmToken: ", fcmToken)
+            
+        }
+    }
+    
+    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
+        
+        let application = UIApplication.shared
+        let userInfo = response.notification.request.content.userInfo
+        let dict = userInfo[AnyHashable("aps")] as! [String : Any]
+        let channelName = userInfo[AnyHashable("channel_name")] as? String
+        let token = userInfo[AnyHashable("token")] as? String
+        let callType = userInfo[AnyHashable("call_type")] as? String
+        guard let tab = window?.rootViewController as? UITabBarController else{return}
+        guard let nav = tab.selectedViewController as? UINavigationController else{return}
+//        let vc = nav.viewControllers.last
+        print(userInfo)
+        if callType == "voice"{
+            let vc = AppStoryboard.Voice.viewController(viewControllerClass: VoiceViewController.self)
+            vc.AgoraChanelName = channelName ?? ""
+            vc.agoraToken = token ?? ""
+            print("\(channelName)\n\(token)")
+            nav.pushViewController(vc, animated: true)
+        }else if callType == "video"{
+            let vc = AppStoryboard.Video.viewController(viewControllerClass: VideoCallViewController.self)
+            vc.AgoraChanelName = channelName ?? ""
+            vc.AgoraToken = token
+            print("\(channelName)\n\(token)")
+            nav.pushViewController(vc, animated: true)
+        }else{
+            print("oooooo")
+        }
+        
+        if(application.applicationState == .inactive)
+        {
+            
+        }else if application.applicationState == .background {
+            
+            
+        }
+        
+        completionHandler()
+    }
+    
+    func application(
+      _ application: UIApplication,
+      didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data
+    ) {
+      Messaging.messaging().apnsToken = deviceToken
+    }
+    
+    
+    func application(application: UIApplication, didReceiveRemoteNotification userInfo: [NSObject : AnyObject]) {
+        print("didReceiveRemoteNotification")
+
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "NotificationsVC")  as! UINavigationController
+        
+        self.window?.rootViewController?.tabBarController?.tabBar.isHidden = false
+        self.window?.rootViewController?.present(vc, animated: true, completion: nil)
+    }
+    
+    
+}

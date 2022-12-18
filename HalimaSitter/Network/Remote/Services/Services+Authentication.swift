@@ -18,7 +18,7 @@ extension Services {
 
     class func getRegister(name : String  , phone : String ,countryId  : Int   ,email : String , fireBase : String , nationality : String , password : String ,  type : Int , nurseryName : String , lat : Double , lng : Double , address : String , callback: @escaping (Register , Int) -> Void, failureHandler: @escaping (Error ,Int) -> Void) {
         let url = URLs.register
-        let headers: HTTPHeaders = [ "Authorization" : ("Bearer \(UserDefault.getToken())") , "lang": MOLHLanguage.currentAppleLanguage()]
+        let headers: HTTPHeaders = [ "Authorization" : ("Bearer \(FirebaseMessagingManger.firebaseMessagingToken)") , "lang": MOLHLanguage.currentAppleLanguage()]
         let parameters = ["username": name  ,  "phone" : phone , "country_id" : countryId , "email" : email , "nationality" : nationality , "password" : password , "fire_base" : fireBase  , "type" : type , "nursery_name" : nurseryName , "lat" : lat , "lng" : lng , "address" : address ] as [String : Any]
         Service.request(url: url, dateFormate: nil, method: HTTPMethod.post, parameters: parameters, headers:headers, callBack: { (response: Register ,Int) in
             callback(response ,Int)
@@ -31,7 +31,7 @@ extension Services {
 
     class func getLogin(phone : String ,password : String ,  countryId : Int  , fireBase : String ,  callback: @escaping (Register , Int) -> Void, failureHandler: @escaping (Error ,Int) -> Void) {
         let url = URLs.login
-        let headers: HTTPHeaders = [ "Authorization" : ("Bearer \(UserDefault.getToken())") , "lang": MOLHLanguage.currentAppleLanguage()]
+        let headers: HTTPHeaders = [ "Authorization" : ("Bearer \(FirebaseMessagingManger.firebaseMessagingToken)") , "lang": MOLHLanguage.currentAppleLanguage()]
         let parameters = ["phone": phone , "password" : password , "country_id" : countryId , "fire_base" : fireBase ] as [String : Any]
         Service.request(url: url, dateFormate: nil, method: HTTPMethod.post, parameters: parameters, headers:headers, callBack: { (response: Register ,Int) in
             callback(response ,Int)
@@ -101,15 +101,38 @@ extension Services {
         }
     }
     
+    // MARK: - Licences
+    
+    class func getLicences( callback: @escaping (Licences , Int) -> Void, failureHandler: @escaping (Error ,Int) -> Void) {
+        let url = URLs.licenses
+        let headers: HTTPHeaders = ["Authorization" : ("Bearer \(UserDefault.getToken())") , "lang": MOLHLanguage.currentAppleLanguage()]
+        Service.request(url: url, dateFormate: nil, method: HTTPMethod.get, parameters: nil, headers:headers, callBack: { (response: Licences ,Int) in
+            callback(response, Int)
+        }) { (error , Int)  in
+            failureHandler(error, Int)
+        }
+    }
+    
     //  MARK: - Complete register
 
     
-    class func getCompleteRegister(residency : Any , lease : Any   , profilImage : Any  , taxCard : Any , commercialRegister : Any,certificatesImages : [UIImage] , certificatesFiles : [Data]  ,    callback: @escaping (Register) -> Void, failureHandler: @escaping (Error) -> Void)  {
+    class func getCompleteRegister(residency : Any , lease : Any   , profilImage : Any  , taxCard : String , commercialRegister : Any,certificatesImages : [UIImage] , certificatesFiles : [Data]  , licenseType: String,   callback: @escaping (Register) -> Void, failureHandler: @escaping (Error) -> Void)  {
         let jsonDecodeer = JSONDecoder()
         
         let headers: HTTPHeaders = [ "Authorization" : ("Bearer \(UserDefault.getToken())") , "lang": MOLHLanguage.currentAppleLanguage()]
-        AF.upload(multipartFormData: {(form: MultipartFormData) in
-            
+        let parameters = ["tax_number" : taxCard , "license_type": licenseType ] as [String : String]
+        AF.upload( multipartFormData: { form in
+            for (key, value) in parameters  {
+                print("\(key)  \(value)")
+                if value is String {
+                    if let temp = value as? String{
+                        print("\(key)  \(value)")
+                        print("\(temp)")
+                        form.append(temp.description.data(using: .utf8)! , withName: key)
+                    }
+                }
+//
+            }
             if let lease = lease as? UIImage{
                 if let data = lease.jpegData(compressionQuality: 0.5){
                     form.append(data, withName: "lease",fileName: "photo.jpeg",mimeType: "image/jpeg")
@@ -143,16 +166,16 @@ extension Services {
 
             }
            
-            if let taxCard = taxCard as? UIImage{
-                if let data = taxCard.jpegData(compressionQuality: 0.5){
-                    form.append(data, withName: "tax_card",fileName: "photo.jpeg",mimeType: "image/jpeg")
-                }
-            }else {
-                if let taxCard = taxCard as? Data{
-                form.append(taxCard, withName: "tax_card", fileName: "name.pdf", mimeType:"application/pdf")
-                }
-
-            }
+//            if let taxCard = taxCard as? UIImage{
+//                if let data = taxCard.jpegData(compressionQuality: 0.5){
+//                    form.append(data, withName: "tax_card",fileName: "photo.jpeg",mimeType: "image/jpeg")
+//                }
+//            }else {
+//                if let taxCard = taxCard as? Data{
+//                form.append(taxCard, withName: "tax_card", fileName: "name.pdf", mimeType:"application/pdf")
+//                }
+//
+//            }
             
             if let commercialRegister = commercialRegister as? UIImage{
                 if let data = commercialRegister.jpegData(compressionQuality: 0.5){

@@ -11,8 +11,12 @@ import GooglePlaces
 protocol LocationData{
     func goToLocationView(lat : Double , long : Double , address : String)
 }
+
 class ConfrimAddressViewController: UIViewController {
+    
     @IBOutlet weak var addressLbl: UILabel!
+    @IBOutlet weak var mapView: GMSMapView!
+    
     let locationManager = CLLocationManager()
     var latitude : Double?
     var longitude : Double?
@@ -21,13 +25,13 @@ class ConfrimAddressViewController: UIViewController {
     var searchController: UISearchController?
     var resultView: UITextView?
     var locationData : LocationData?
-    @IBOutlet weak var mapView: GMSMapView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         getCurrentLocation()
         updateSearchBar()
         mapView.delegate = self
-        // Do any additional setup after loading the view.
     }
     
     @IBAction func confrimAddressBtnPressed(_ sender: UIButton) {

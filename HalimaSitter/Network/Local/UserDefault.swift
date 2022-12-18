@@ -7,6 +7,15 @@
 //
 
 import Foundation
+import FirebaseMessaging
+
+struct FirebaseMessagingManger {
+    
+    static var firebaseMessagingToken: String {
+         return Messaging.messaging().fcmToken ?? "Not Available"
+    }
+    
+}
 
 struct UserDefault {
     
@@ -24,7 +33,7 @@ struct UserDefault {
     static let token = "token"
     static var checkLogin = "didSignIn"
     static var userType = "userType"
-    static let fireBaseToken =  "fireBaseToken"
+    static let fireBaseToken = FirebaseMessagingManger.firebaseMessagingToken //"fireBaseToken"
     static var count = 0
     
     
@@ -68,6 +77,28 @@ struct UserDefault {
     }
     static func getPhone () ->String{
         return UserDefaults.standard.string(forKey: self.phone) ??  ""
+    }
+    
+    static func getUserData() -> UserData? {
+        let defaults = UserDefaults.standard
+        guard let savedPerson = defaults.object(forKey: userDataKey) as? Data,
+              let loadedData = try? JSONDecoder().decode(UserData.self, from: savedPerson)
+        else { return nil }
+        
+        return loadedData
+    }
+    
+    static let userDataKey = "_UserData_"
+    
+    static func setUserData(_ newValue: UserData?) {
+        // guard let newValue = newValue else { return }
+        let encoder = JSONEncoder()
+        if let encoded = try? encoder.encode(newValue) {
+            let defaults = UserDefaults.standard
+            defaults.set(encoded, forKey: userDataKey)
+        } else {
+            fatalError("Unable To Save User Data")
+        }
     }
     
     static func setImage ( _ image : String){

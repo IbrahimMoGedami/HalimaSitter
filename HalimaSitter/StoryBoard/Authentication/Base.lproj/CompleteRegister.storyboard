@@ -253,7 +253,7 @@
                                                                         </constraints>
                                                                         <color key="textColor" name="LblColor2"/>
                                                                         <fontDescription key="fontDescription" name="DINNextLTArabic-Medium" family="DIN Next LT Arabic" pointSize="15"/>
-                                                                        <textInputTraits key="textInputTraits"/>
+                                                                        <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
                                                                         <userDefinedRuntimeAttributes>
                                                                             <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="tax"/>
                                                                             <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
@@ -273,7 +273,7 @@
                                                                             </userDefinedRuntimeAttribute>
                                                                         </userDefinedRuntimeAttributes>
                                                                     </textField>
-                                                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bXh-8T-xBa">
+                                                                    <button hidden="YES" opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bXh-8T-xBa">
                                                                         <rect key="frame" x="0.0" y="0.0" width="350" height="50"/>
                                                                         <connections>
                                                                             <action selector="attachImagesBtnPressed:" destination="UoB-U3-Uke" eventType="touchUpInside" id="GYi-fb-agJ"/>
@@ -293,6 +293,11 @@
                                                                     <constraint firstItem="DKK-9F-ucm" firstAttribute="leading" secondItem="m2f-D8-qQC" secondAttribute="leading" id="v5w-Su-JVd"/>
                                                                     <constraint firstAttribute="height" constant="50" id="vlv-tu-ve8"/>
                                                                 </constraints>
+                                                                <variation key="default">
+                                                                    <mask key="subviews">
+                                                                        <exclude reference="bXh-8T-xBa"/>
+                                                                    </mask>
+                                                                </variation>
                                                             </view>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="SYE-qq-CeM">
                                                                 <rect key="frame" x="0.0" y="264" width="350" height="50"/>
@@ -469,7 +474,7 @@
                                                                             </userDefinedRuntimeAttribute>
                                                                         </userDefinedRuntimeAttributes>
                                                                     </textField>
-                                                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kU0-4N-R80">
+                                                                    <button hidden="YES" opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kU0-4N-R80">
                                                                         <rect key="frame" x="0.0" y="0.0" width="350" height="50"/>
                                                                         <connections>
                                                                             <action selector="licenseBtnPressed:" destination="UoB-U3-Uke" eventType="touchUpInside" id="8t9-G4-FcV"/>
@@ -489,6 +494,11 @@
                                                                     <constraint firstItem="kU0-4N-R80" firstAttribute="top" secondItem="nbv-8Z-Yqd" secondAttribute="top" id="jB7-UR-PKe"/>
                                                                     <constraint firstItem="jao-o6-dUE" firstAttribute="leading" secondItem="nbv-8Z-Yqd" secondAttribute="leading" id="zrE-5F-XXM"/>
                                                                 </constraints>
+                                                                <variation key="default">
+                                                                    <mask key="subviews">
+                                                                        <exclude reference="kU0-4N-R80"/>
+                                                                    </mask>
+                                                                </variation>
                                                             </view>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="dc8-nk-nrw">
                                                                 <rect key="frame" x="0.0" y="462" width="350" height="50"/>

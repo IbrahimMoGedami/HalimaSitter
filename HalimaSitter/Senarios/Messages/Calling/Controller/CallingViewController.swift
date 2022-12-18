@@ -37,7 +37,7 @@ enum HungupReason {
 }
 
 protocol CallingVCDelegate: NSObjectProtocol {
-    func callingVC(_ vc: CallingViewController, didHungup reason: HungupReason)
+    func callingVC(_ vc: UIViewController, didHungup reason: HungupReason)
 
 }
 

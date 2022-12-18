@@ -3,36 +3,34 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>541779047480-j6qqhsspvu30tc946bl5me7c0ire8k27.apps.googleusercontent.com</string>
+	<string>879033421389-pvg1a6sunoomo806idonqqnvnm48nl2k.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.541779047480-j6qqhsspvu30tc946bl5me7c0ire8k27</string>
-	<key>ANDROID_CLIENT_ID</key>
-	<string>541779047480-3j66q19qbketfkapl8udf3r4ki141n7e.apps.googleusercontent.com</string>
+	<string>com.googleusercontent.apps.879033421389-pvg1a6sunoomo806idonqqnvnm48nl2k</string>
 	<key>API_KEY</key>
-	<string>AIzaSyDNwyvhSYBcbWQ4E2WCBiZ-EZPPyq-UQHM</string>
+	<string>AIzaSyDKzAnZY6Hh_2lZ82wqIVRdVJSRcGa4fZE</string>
 	<key>GCM_SENDER_ID</key>
-	<string>541779047480</string>
+	<string>879033421389</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.CodeIn.Mostafa.HalimaSitter</string>
+	<string>com.almusand.haleemh</string>
 	<key>PROJECT_ID</key>
-	<string>lima-189df</string>
+	<string>halimasitter</string>
 	<key>STORAGE_BUCKET</key>
-	<string>lima-189df.appspot.com</string>
+	<string>halimasitter.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
-	<false></false>
+	<false/>
 	<key>IS_ANALYTICS_ENABLED</key>
-	<false></false>
+	<false/>
 	<key>IS_APPINVITE_ENABLED</key>
-	<true></true>
+	<true/>
 	<key>IS_GCM_ENABLED</key>
-	<true></true>
+	<true/>
 	<key>IS_SIGNIN_ENABLED</key>
-	<true></true>
+	<true/>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:541779047480:ios:886f2e14881d590f1d62cd</string>
+	<string>1:879033421389:ios:d516c524608372dbf59604</string>
 	<key>DATABASE_URL</key>
-	<string>https://lima-189df-default-rtdb.firebaseio.com</string>
+	<string>https://halimasitter-default-rtdb.firebaseio.com</string>
 </dict>
 </plist>

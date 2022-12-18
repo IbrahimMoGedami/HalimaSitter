@@ -18,3 +18,20 @@ struct Messages {
     var senderId : Int?
     var sitterId : Int?
 }
+
+struct  GetAgoraTokenModel: Codable{
+    var message: String?
+    var status: Int?
+    var data: GetAgoraTokenData?
+}
+
+struct GetAgoraTokenData: Codable{
+    var token: String?
+    var channelName: String?
+    var callType: AgoraType?
+    
+    enum CodingKeys: String, CodingKey {
+        case token, channelName
+        case callType = "call_type"
+    }
+}

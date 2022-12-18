@@ -12,6 +12,7 @@
 		1FF1515D2918176800A61B94 /* ChangePassword+Func.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF1515C2918176800A61B94 /* ChangePassword+Func.swift */; };
 		1FF1515F2918178900A61B94 /* ChangePassword+Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF1515E2918178900A61B94 /* ChangePassword+Api.swift */; };
 		21030F7E7AD556AB276681D2 /* Pods_HalimaSitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0279FC9D90F071FA9C5E6229 /* Pods_HalimaSitter.framework */; };
+		25C9E8EE294FA2F900C077DB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 25C9E8ED294FA2F900C077DB /* GoogleService-Info.plist */; };
 		E404CBFD26B81CB500EBC894 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E404CBFC26B81CB500EBC894 /* AppDelegate.swift */; };
 		E404CC0926B8358D00EBC894 /* UserTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E404CC0826B8358D00EBC894 /* UserTypeViewController.swift */; };
 		E404CC0F26B836EA00EBC894 /* UserType+Func.swift in Sources */ = {isa = PBXBuildFile; fileRef = E404CC0E26B836EA00EBC894 /* UserType+Func.swift */; };
@@ -130,7 +131,6 @@
 		E4778B4326C27DE00061A652 /* RateAndComments+Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4778B4226C27DE00061A652 /* RateAndComments+Api.swift */; };
 		E4778B4B26C289050061A652 /* SingleImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4778B4A26C289050061A652 /* SingleImageViewController.swift */; };
 		E4778B4F26C28D6A0061A652 /* ParentMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4778B4E26C28D6A0061A652 /* ParentMessages.swift */; };
-		E4778B5226C2953A0061A652 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E4778B5126C2953A0061A652 /* GoogleService-Info.plist */; };
 		E478213F26BAA93F00F77CBE /* WatingToAccpetedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E478213E26BAA93F00F77CBE /* WatingToAccpetedViewController.swift */; };
 		E478214526BABBEA00F77CBE /* Tab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E478214426BABBEA00F77CBE /* Tab.storyboard */; };
 		E478214A26BABBF700F77CBE /* ParentTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E478214926BABBF600F77CBE /* ParentTabBarViewController.swift */; };
@@ -232,6 +232,7 @@
 		1FF1515A2918173200A61B94 /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
 		1FF1515C2918176800A61B94 /* ChangePassword+Func.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ChangePassword+Func.swift"; sourceTree = "<group>"; };
 		1FF1515E2918178900A61B94 /* ChangePassword+Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ChangePassword+Api.swift"; sourceTree = "<group>"; };
+		25C9E8ED294FA2F900C077DB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		811FA61F85C3DD8E878B966B /* Pods-HalimaSitter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HalimaSitter.release.xcconfig"; path = "Target Support Files/Pods-HalimaSitter/Pods-HalimaSitter.release.xcconfig"; sourceTree = "<group>"; };
 		BC138A104B0CB4EF6F0CA68E /* Pods-HalimaSitter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HalimaSitter.debug.xcconfig"; path = "Target Support Files/Pods-HalimaSitter/Pods-HalimaSitter.debug.xcconfig"; sourceTree = "<group>"; };
 		E404CBFC26B81CB500EBC894 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -354,7 +355,6 @@
 		E4778B4226C27DE00061A652 /* RateAndComments+Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RateAndComments+Api.swift"; sourceTree = "<group>"; };
 		E4778B4A26C289050061A652 /* SingleImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleImageViewController.swift; sourceTree = "<group>"; };
 		E4778B4E26C28D6A0061A652 /* ParentMessages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentMessages.swift; sourceTree = "<group>"; };
-		E4778B5126C2953A0061A652 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E478213E26BAA93F00F77CBE /* WatingToAccpetedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatingToAccpetedViewController.swift; sourceTree = "<group>"; };
 		E478214426BABBEA00F77CBE /* Tab.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Tab.storyboard; sourceTree = "<group>"; };
 		E478214926BABBF600F77CBE /* ParentTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParentTabBarViewController.swift; sourceTree = "<group>"; };
@@ -594,7 +594,7 @@
 			isa = PBXGroup;
 			children = (
 				E476132B26B7F544008D8FC1 /* Info.plist */,
-				E4778B5126C2953A0061A652 /* GoogleService-Info.plist */,
+				25C9E8ED294FA2F900C077DB /* GoogleService-Info.plist */,
 			);
 			path = Configuration;
 			sourceTree = "<group>";
@@ -837,7 +837,6 @@
 		E47613DD26B808A7008D8FC1 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				E47613E626B808A7008D8FC1 /* Model */,
 				E47613E026B808A7008D8FC1 /* Controller */,
 				E47613DE26B808A7008D8FC1 /* Table Cell */,
 			);
@@ -862,13 +861,6 @@
 				E47613E226B808A7008D8FC1 /* Login+Api.swift */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		E47613E626B808A7008D8FC1 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		E47613E726B808A7008D8FC1 /* ValidationCode */ = {
@@ -1708,6 +1700,7 @@
 				E47613B426B80874008D8FC1 /* LaunchScreen.strings in Resources */,
 				E47E79E926D25C5600B1E0EF /* CompleteRegister.storyboard in Resources */,
 				E476132726B7F544008D8FC1 /* Assets.xcassets in Resources */,
+				25C9E8EE294FA2F900C077DB /* GoogleService-Info.plist in Resources */,
 				E48DB59C26B94F73003B7345 /* Localizable.strings in Resources */,
 				E47E7A4026D26B8300B1E0EF /* Voice.storyboard in Resources */,
 				E47E7A0B26D2687000B1E0EF /* CurrentOrderDetailes.storyboard in Resources */,
@@ -1746,7 +1739,6 @@
 				E47E7A0826D2686100B1E0EF /* Orders.storyboard in Resources */,
 				E476137E26B80672008D8FC1 /* AlertView.xib in Resources */,
 				E47E79DB26D2597D00B1E0EF /* Register.storyboard in Resources */,
-				E4778B5226C2953A0061A652 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

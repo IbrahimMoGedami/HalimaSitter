@@ -25,6 +25,19 @@ extension Services {
         }
     }
     
+    class func getAgoraTokenApi(parentId : Int, type: AgoraType , callback: @escaping (GetAgoraTokenModel , Int) -> Void, failureHandler: @escaping (Error ,Int) -> Void) {
+        let url = URLs.getAgoraToken
+        let headers: HTTPHeaders = [ "Authorization" : ("Bearer \(UserDefault.getToken())") , "lang": MOLHLanguage.currentAppleLanguage()]
+        let parameters = ["parent_id": parentId, "call_type": type.rawValue] as [String : Any]
+        Service.request(url: url, dateFormate: nil, method: HTTPMethod.get, parameters: parameters, headers:headers, callBack: { (response: GetAgoraTokenModel ,Int) in
+            print("URL :- \(url)")
+            print("RESPONSE :- \(response)")
+            callback(response ,Int)
+        }) { (error , Int)  in
+            failureHandler(error,Int)
+        }
+    }
+    
     //  MARK: - My Notification
     
     class func getMyNotification(callback: @escaping (MyNotification , Int) -> Void, failureHandler: @escaping (Error ,Int) -> Void) {

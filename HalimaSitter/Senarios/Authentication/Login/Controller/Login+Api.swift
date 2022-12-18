@@ -30,7 +30,7 @@ extension LoginViewController : NVActivityIndicatorViewable   {
                 self.completeDataPhone()
             }
             
-        }) { (error,stats) in
+        }) { (error, stats) in
             print("stats code is \(stats)")
             self.stopAnimating()
             print(error.localizedDescription)
@@ -42,13 +42,16 @@ extension LoginViewController : NVActivityIndicatorViewable   {
     func getLoginData(){
         if validateLogin(){
         self.startAnimating()
-            Services.getLogin(phone: phoneTf.text!, password: passwordTf.text!, countryId: countryId!, fireBase: UserDefault.getFireBaseToken(), callback: { [weak self] (result,stats)  in
+            print("\(FirebaseMessagingManger.firebaseMessagingToken)")
+            Services.getLogin(phone: phoneTf.text!, password: passwordTf.text!, countryId: countryId!, fireBase: FirebaseMessagingManger.firebaseMessagingToken, callback: { [weak self] (result,stats)  in
             guard let self = self else {return}
             self.stopAnimating()
             print(result)
             print("stats code is \(stats)")
             if  result.status == 1 {
                 self.register = result
+//                self.setUserData(result.data)
+                UserDefault.setUserData(result.data)
                 self.saveDataInUserDeafults()
                 self.clearText()
                 self.whatAfterLogin()

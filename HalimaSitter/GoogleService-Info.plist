@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>541779047480-j6qqhsspvu30tc946bl5me7c0ire8k27.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.541779047480-j6qqhsspvu30tc946bl5me7c0ire8k27</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDNwyvhSYBcbWQ4E2WCBiZ-EZPPyq-UQHM</string>
+	<key>GCM_SENDER_ID</key>
+	<string>541779047480</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.CodeIn.Mostafa.HalimaSitter</string>
+	<key>PROJECT_ID</key>
+	<string>lima-189df</string>
+	<key>STORAGE_BUCKET</key>
+	<string>lima-189df.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:541779047480:ios:886f2e14881d590f1d62cd</string>
+	<key>DATABASE_URL</key>
+	<string>https://lima-189df-default-rtdb.firebaseio.com</string>
+</dict>
+</plist>

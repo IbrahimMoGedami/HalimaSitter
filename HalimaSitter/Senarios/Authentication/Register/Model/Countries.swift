@@ -23,3 +23,19 @@ struct CountrtData: Codable {
     let phoneNum: Int?
     let icon: String?
 }
+
+
+// MARK: - Licences
+struct Licences: Codable {
+    let status: Int?
+    let message: String?
+    let data: [LicencesData]?
+}
+
+
+
+// MARK: - CountrtData
+struct LicencesData: Codable {
+    let id: String?
+    let name: String?
+}

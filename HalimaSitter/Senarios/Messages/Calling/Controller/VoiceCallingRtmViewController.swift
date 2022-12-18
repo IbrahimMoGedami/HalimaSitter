@@ -6,8 +6,8 @@
 //
 
 import UIKit
-//import AgoraRtmKit
-//import AudioToolbox
+import AgoraRtmKit
+import AudioToolbox
 class VoiceCallingRtmViewController: UIViewController {
 
     enum Operation {
@@ -46,7 +46,7 @@ class VoiceCallingRtmViewController: UIViewController {
                                                          green: 211.0 / 255.0,
                                                          blue: 252.0 / 255.0, alpha: 1))
     private var timer: Timer?
-//    private var soundId = SystemSoundID()
+    private var soundId = SystemSoundID()
     
     weak var delegate: CallingVCDelegate?
     
@@ -85,12 +85,11 @@ class VoiceCallingRtmViewController: UIViewController {
     func close(_ reason: HungupReason) {
         animationStatus = .off
         ringStatus = .off
-     //   delegate?.callingVC(self, didHungup: reason)
+        delegate?.callingVC(self, didHungup: reason)
     }
 }
 
-
-private extension VoiceCallingRtmViewController {
+extension VoiceCallingRtmViewController {
     @objc func animation() {
         aureolaView.startLayerAnimation(aboveView: headImageView,
                                         layerWidth: 2)
@@ -114,22 +113,22 @@ private extension VoiceCallingRtmViewController {
     }
     
     func startPlayRing() {
-//        let path = Bundle.main.path(forResource: "ring", ofType: "mp3")
-//        let url = URL.init(fileURLWithPath: path!)
-//        AudioServicesCreateSystemSoundID(url as CFURL, &soundId)
-//
-//        AudioServicesAddSystemSoundCompletion(soundId,
-//                                              CFRunLoopGetMain(),
-//                                              nil, { (soundId, context) in
-//                                                AudioServicesPlaySystemSound(soundId)
-//        }, nil)
-//
-//        AudioServicesPlaySystemSound(soundId)
+        let path = Bundle.main.path(forResource: "ring", ofType: "mp3")
+        let url = URL.init(fileURLWithPath: path!)
+        AudioServicesCreateSystemSoundID(url as CFURL, &soundId)
+
+        AudioServicesAddSystemSoundCompletion(soundId,
+                                              CFRunLoopGetMain(),
+                                              nil, { (soundId, context) in
+                                                AudioServicesPlaySystemSound(soundId)
+        }, nil)
+
+        AudioServicesPlaySystemSound(soundId)
     }
     
     func stopPlayRing() {
-//        AudioServicesDisposeSystemSoundID(soundId)
-//        AudioServicesRemoveSystemSoundCompletion(soundId)
+        AudioServicesDisposeSystemSoundID(soundId)
+        AudioServicesRemoveSystemSoundCompletion(soundId)
     }
 }
 
